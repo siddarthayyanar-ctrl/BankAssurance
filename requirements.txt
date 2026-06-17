@@ -1,0 +1,17 @@
+# Data Generation & Processing
+faker
+pandas
+numpy
+scikit-learn
+lightgbm
+imblearn
+shap
+
+# API & Dashboard Frontend
+fastapi
+uvicorn
+streamlit
+requests
+
+# MLOps tracking
+mlflow

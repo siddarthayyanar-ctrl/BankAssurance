@@ -1,1 +1,4 @@
-print(round(1255.126548465, -2))
+from random import random
+import numpy as np
+
+print(np.random.randint(40, 120))

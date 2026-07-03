@@ -9,7 +9,8 @@ def engineer_features():
     # 1. Load raw data paths
     customers_df = pd.read_csv("data/customers.csv")
     transactions_df = pd.read_csv("data/transactions.csv")
-    insurance_df = pd.read_csv("data/insurance_labels.csv")
+    #insurance_df = pd.read_csv("data/insurance_labels.csv")
+    insurance_df = pd.read_csv("data/insurance.csv")
     
     # 2. Process Transactions Ledger
     print("Aggregating transactional behavioral data...")

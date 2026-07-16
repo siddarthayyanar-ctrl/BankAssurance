@@ -58,6 +58,61 @@ This gives the model a held-out dataset to measure generalization performance.
 
 A LightGBM regressor is initialized with the following settings:
 
+- `n_estimators=200`: Number of boosting rounds
+- `learning_rate=0.05`: Shrinkage (regularization) parameter
+- `num_leaves=31`: Maximum leaves per tree
+- `random_state=42`: Reproducibility seed
+
+The model is trained on the full feature set, which includes existing insurance ownership flags. This is intentional: the bank knows its customers' current policies and can use them as signals for CLV prediction.
+
+### 5. Model Evaluation
+
+After training, the model is evaluated on the held-out test set:
+
+- **RMSE** (Root Mean Squared Error): Measures average prediction error in dollars
+- **R² Score**: Indicates percentage of variance explained by the model
+
+Both metrics are printed to stdout for quick performance validation.
+
+### 6. Model Serialization
+
+Trained artifacts are saved to the `models/` directory:
+
+- `models/clv_model.pkl` — The fitted LGBMRegressor
+- `models/feature_columns_clv.pkl` — Feature column names for later alignment
+
+The feature list is saved to ensure consistent feature ordering during inference.
+
+---
+
+## Output Files
+
+After execution, the script produces:
+
+- `models/clv_model.pkl`
+- `models/feature_columns_clv.pkl`
+
+Both files are required by [app/main.py](../app/main.py) at runtime to perform CLV predictions.
+
+---
+
+## Key Design Decisions
+
+- **LightGBM over sklearn RandomForest**: Gradient boosting typically outperforms bagging for continuous targets with moderate datasets.
+- **Insurance flags included**: Existing product ownership is retained in the feature set because it carries signal about customer value trajectory.
+- **80/20 train-test split**: Sufficient for model evaluation without holding out too much training data.
+- **Fixed random seed**: Ensures reproducibility across training runs.
+
+---
+
+## Dependencies
+
+- `pandas` — Data loading and manipulation
+- `numpy` — Numeric operations
+- `joblib` — Model serialization
+- `lightgbm` — LGBMRegressor implementation
+- `scikit-learn` — train_test_split, metrics
+
 - `n_estimators=200`
 - `learning_rate=0.05`
 - `num_leaves=31`

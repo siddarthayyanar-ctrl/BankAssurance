@@ -59,6 +59,98 @@ The data is structured as:
 
 ### 3. Train/Test Split
 
+The data is split using `train_test_split()`:
+
+- Test size: 20%
+- Random state: 42
+
+This ensures a consistent hold-out evaluation set for performance measurement.
+
+### 4. Multi-Output Classification Model
+
+A Random Forest classifier is wrapped in `MultiOutputClassifier` to handle three binary targets simultaneously:
+
+```python
+forest = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42)
+classifier = MultiOutputClassifier(forest, n_jobs=-1)
+classifier.fit(X_train, y_train)
+```
+
+**Settings**:
+- `n_estimators=100`: Number of decision trees in the ensemble
+- `max_depth=10`: Maximum tree depth to control overfitting
+- `random_state=42`: Reproducibility seed
+- `n_jobs=-1`: Uses all CPU cores for parallel training
+
+The `MultiOutputClassifier` wrapper trains three independent binary classifiers, one for each insurance product:
+1. Auto Insurance (`has_auto_ins`)
+2. Health Insurance (`has_health_ins`)
+3. Life Insurance (`has_life_ins`)
+
+### 5. Model Evaluation
+
+After training, predictions are made on the test set and a classification report is generated for each product:
+
+- **Precision**: How many positive predictions were correct
+- **Recall**: How many actual positives were found
+- **F1-Score**: Harmonic mean of precision and recall
+- **Support**: Number of test samples per class
+
+The report is printed to stdout for each insurance product independently.
+
+### 6. Model Serialization
+
+The trained classifier is saved to disk:
+
+```python
+joblib.dump(classifier, "models/insurance_classifier.pkl")
+```
+
+Only the classifier object is saved. Feature column names must be manually saved by the developer to ensure API layer consistency:
+
+```python
+joblib.dump(feature_cols, "models/feature_columns.pkl")
+```
+
+**Note**: As of the current implementation, `models/feature_columns.pkl` must be generated manually or the training script should be updated to include this save statement. The [app/main.py](../app/main.py) requires this file to align incoming features with the trained model's expected input schema.
+
+---
+
+## Output Files
+
+After execution, the script produces:
+
+- `models/insurance_classifier.pkl` — The fitted MultiOutputClassifier wrapping 3 Random Forest estimators
+- `models/feature_columns.pkl` — **Must be saved manually** with classifier feature column names
+
+Both files are required by [app/main.py](../app/main.py) for real-time insurance propensity predictions and SHAP explainability.
+
+---
+
+## Key Design Decisions
+
+- **MultiOutputClassifier**: Allows simultaneous prediction of three related targets, reducing redundant feature processing.
+- **Random Forest over other methods**: Handles non-linear interactions well and provides feature importance for interpretability.
+- **Three independent binary classifiers**: Simpler than multi-label approaches; each product can have its own decision boundary.
+- **max_depth=10**: Balances model complexity with overfitting risk on binary classification tasks.
+
+---
+
+## Dependencies
+
+- `pandas` — Data loading and manipulation
+- `joblib` — Model serialization
+- `scikit-learn` — RandomForestClassifier, MultiOutputClassifier, train_test_split, classification_report
+
+---
+
+## Integration with API Layer
+
+The trained classifier is loaded by [app/main.py](../app/main.py) and used in two ways:
+
+1. **Propensity Scoring**: `predict_proba()` returns purchase probabilities for each product
+2. **SHAP Explainability**: The base forest estimator is wrapped in a `TreeExplainer` to compute local feature importance scores for each customer prediction
+
 The data is split into training and testing subsets using `train_test_split()`:
 
 - test size: 20%

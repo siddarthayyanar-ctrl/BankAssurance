@@ -15,3 +15,6 @@ requests
 
 # MLOps tracking
 mlflow
+
+# GenAI chat
+google-genai

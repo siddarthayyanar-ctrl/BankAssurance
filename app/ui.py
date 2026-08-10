@@ -3,6 +3,59 @@ import requests
 import pandas as pd
 import sqlite3
 
+import os
+from pathlib import Path
+from typing import Optional
+
+from google import genai
+
+CONTEXT_FILE_PATH = "knowledge.txt"
+
+
+def load_context(file_path: str) -> str:
+    path = Path(file_path).expanduser()
+    if not path.exists():
+        raise FileNotFoundError(f"Context file not found: {path}")
+    if not path.is_file():
+        raise ValueError(f"Context path is not a file: {path}")
+
+    text = path.read_text(encoding="utf-8")
+    return text.strip()
+
+def build_prompt(question: str, context: Optional[str] = None) -> str:
+    if context:
+        return (
+            "Use the following context to answer the question.\n\n"
+            "Context:\n"
+            f"{context}\n\n"
+            "Question:\n"
+            f"{question}"
+        )
+    return question
+
+def generate_ai_response(prompt_text: str, context: Optional[str] = None, model_name: Optional[str] = None) -> str:
+    #api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return "Gemini chat is unavailable because GEMINI_API_KEY is not set."
+
+    try:
+        client = genai.Client(api_key=api_key)
+    except Exception as exc:
+        return f"Gemini client could not be initialized: {exc}"
+
+    resolved_model = model_name or os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+    prompt = build_prompt(prompt_text, context)
+
+    try:
+        response = client.models.generate_content(
+            model=resolved_model,
+            contents=prompt
+        )
+        return getattr(response, "text", str(response)).strip()
+    except Exception as exc:
+        return f"Gemini chat error: {exc}"
+
 # Set webpage configuration
 st.set_page_config(
     page_title="Predictive Bancassurance Engine - V2.0",
@@ -30,10 +83,18 @@ def get_customer_ids():
 
 customer_list = get_customer_ids()
 
+# Load GenAI knowledge context for the chat tab
+ai_context = None
+try:
+    ai_context = load_context(CONTEXT_FILE_PATH)
+except Exception:
+    ai_context = None
+
 # --- DESIGN APPLICATION TABS ---
-tab_portfolio, tab_sandbox, tab_monitor = st.tabs([
+tab_portfolio, tab_sandbox, tab_chat, tab_monitor = st.tabs([
     "🎯 Customer Portfolio Analysis", 
     "🧪 Live Sandbox Predictor", 
+    "🤖 Chat BOT",
     "📊 System Operations Monitor"
 ])
 
@@ -157,6 +218,45 @@ with tab_sandbox:
                     st.error("Failed to parse variables via standard API configuration.")
             except Exception as e:
                 st.error(f"Sandbox communications breakdown: {e}")
+
+# ==========================================
+# TAB X: CHAT BOT (GenAI)
+# ==========================================
+with tab_chat:
+    st.subheader("Chat BOT — GenAI Assistant")
+    st.markdown("Ask domain or product questions and get responses powered by a GenAI model (Gemini). Chat history is kept for this session only.")
+
+    if 'chat_history' not in st.session_state:
+        st.session_state.chat_history = []
+
+    def send_to_gemini(question: str) -> str:
+        """Use the local Gemini helper to generate a response from the shared GenAI function."""
+        return generate_ai_response(question, context=ai_context)
+
+    if ai_context is None:
+        st.warning("GenAI knowledge context could not be loaded from 'knowledge.txt'. The assistant will still reply without context.")
+
+    # Display chat history
+    chat_container = st.container()
+    with st.form("chat_form", clear_on_submit=True):
+        user_question = st.text_input("Your question", key="chat_input")
+        send_btn = st.form_submit_button("Send")
+
+    if send_btn and user_question:
+        # append user message
+        st.session_state.chat_history.append({"role": "user", "text": user_question})
+        with st.spinner("Generating GenAI response..."):
+            reply = send_to_gemini(user_question)
+        st.session_state.chat_history.append({"role": "assistant", "text": reply})
+
+    # Render messages in reverse chronological order (most recent at bottom)
+    with chat_container:
+        for msg in st.session_state.chat_history:
+            if msg['role'] == 'user':
+                st.markdown(f"**You:** {msg['text']}")
+            else:
+                st.markdown(f"**Bot:** {msg['text']}")
+        st.markdown("---")
 
 # ==========================================
 # TAB 3: SYSTEM OPERATIONS MONITOR (MLOps)

@@ -1,0 +1,9 @@
+{
+  "title": "Bancassurance Knowledge Base",
+  "context": "This knowledge file contains domain information used by the GenAI assistant.\n\n- Product types: Auto, Health, Life.\n- Typical conversion drivers: tenure, credit score, account balance, recent transaction behavior.\n- Cross-sell triggers: high propensity for Auto if frequent fuel and auto-service spending.\n\nUse this context to provide concise, product-aware answers to user queries.",
+  "entries": [
+    "Products: Auto, Health, Life",
+    "Drivers: tenure, credit_score, account_balance",
+    "Note: Update this JSON to add more domain facts"
+  ]
+}

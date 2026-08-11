@@ -4,12 +4,13 @@ import pandas as pd
 import sqlite3
 
 import os
+import json
 from pathlib import Path
 from typing import Optional
 
 from google import genai
 
-CONTEXT_FILE_PATH = "knowledge.txt"
+CONTEXT_FILE_PATH = "app/context/knowledge.json"
 
 
 def load_context(file_path: str) -> str:
@@ -19,8 +20,26 @@ def load_context(file_path: str) -> str:
     if not path.is_file():
         raise ValueError(f"Context path is not a file: {path}")
 
-    text = path.read_text(encoding="utf-8")
-    return text.strip()
+    raw = path.read_text(encoding="utf-8")
+    try:
+        data = json.loads(raw)
+    except Exception as exc:
+        raise ValueError(f"Failed to parse JSON context file {path}: {exc}")
+
+    # Accept several JSON shapes: a top-level string, dict with 'context' or 'entries', or a list
+    if isinstance(data, str):
+        return data.strip()
+    if isinstance(data, dict):
+        if 'context' in data and isinstance(data['context'], str):
+            return data['context'].strip()
+        if 'entries' in data and isinstance(data['entries'], list):
+            return "\n".join(str(e) for e in data['entries']).strip()
+        # fallback to a pretty-printed JSON blob
+        return json.dumps(data, indent=2)
+    if isinstance(data, list):
+        return "\n".join(str(e) for e in data).strip()
+
+    return str(data)
 
 def build_prompt(question: str, context: Optional[str] = None) -> str:
     if context:
@@ -44,9 +63,11 @@ def generate_ai_response(prompt_text: str, context: Optional[str] = None, model_
     except Exception as exc:
         return f"Gemini client could not be initialized: {exc}"
 
-    resolved_model = model_name or os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+    resolved_model = model_name or os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
     prompt = build_prompt(prompt_text, context)
 
+    # Do not want to load gen AI for testing purpose, for development, we can comment this out and return a mock response 
+    return prompt  # Mock response for testing without actual API call
     try:
         response = client.models.generate_content(
             model=resolved_model,
@@ -234,7 +255,7 @@ with tab_chat:
         return generate_ai_response(question, context=ai_context)
 
     if ai_context is None:
-        st.warning("GenAI knowledge context could not be loaded from 'knowledge.txt'. The assistant will still reply without context.")
+        st.warning(f"GenAI knowledge context could not be loaded from '{CONTEXT_FILE_PATH}'. The assistant will still reply without context.")
 
     # Display chat history
     chat_container = st.container()

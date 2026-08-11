@@ -123,6 +123,19 @@ streamlit run app/ui.py
 
 ```
 
+## 🤖 GenAI Context File (JSON)
+
+- **File**: app/context/knowledge.json
+- **Purpose**: Contains domain facts and short entries used by the GenAI assistant in the Streamlit Chat tab. The UI loads the top-level `context` string or joins items from the `entries` list.
+- **Edit Instructions**: Open app/context/knowledge.json and update the `context` text or add/remove items in the `entries` array. Keep the JSON valid UTF-8.
+- **Validation**: Quick check with Python:
+
+```bash
+python -c "import json; json.load(open('app/context/knowledge.json')); print('OK')"
+```
+
+- **Fallback**: If the file is missing or invalid, the app logs a warning and the GenAI assistant will still reply without the enriched context.
+
 ---
 
 ## ⚡ API Endpoint Specification Map

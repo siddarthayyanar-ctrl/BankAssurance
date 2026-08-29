@@ -14,8 +14,12 @@ target_col = 'actual_12m_value'
 
 # FIX: We allow the regressor to see the insurance ownership flags 
 # because a bank knows its customers' existing policies when calculating value!
+# Also exclude any non-numeric metadata columns such as customer_name.
 exclude_cols = ['customer_id', target_col]
-feature_cols = [col for col in df.columns if col not in exclude_cols]
+feature_cols = [
+    col for col in df.select_dtypes(include=['number', 'bool']).columns
+    if col not in exclude_cols
+]
 
 X = df[feature_cols]
 y = df[target_col]

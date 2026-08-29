@@ -115,25 +115,51 @@ def get_predictions_from_db(payload: PredictionRequest):
     sorted_impacts = sorted(feature_impact_map.items(), key=lambda item: abs(item[1]), reverse=True)
     top_drivers = [feat for feat, val in sorted_impacts[:2]]
     
-    recommendations = []
-    if prob_auto > 0.4:
-        recommendations.append({
+    product_scores = [
+        {
             "product": "Automobile Insurance",
-            "probability": round(float(prob_auto), 4),
+            "probability": float(prob_auto),
             "trigger": f"High risk pattern found. Top behavioral features identified: {', '.join(top_drivers).replace('_', ' ')}."
-        })
-    if prob_health > 0.4:
-        recommendations.append({
+        },
+        {
             "product": "Health Insurance",
-            "probability": round(float(prob_health), 4),
+            "probability": float(prob_health),
             "trigger": f"Demographic tier shift verified. Primary medical metrics evaluated: {', '.join(top_drivers).replace('_', ' ')}."
-        })
-    if prob_life > 0.4:
-        recommendations.append({
+        },
+        {
             "product": "Comprehensive Life Policy",
-            "probability": round(float(prob_life), 4),
+            "probability": float(prob_life),
             "trigger": f"Wealth asset accumulation patterns confirmed. Primary cash indicators: {', '.join(top_drivers).replace('_', ' ')}."
-        })
+        }
+    ]
+
+    # Keep a reasonable display threshold for the UI, but do not hide all non-auto products
+    # when the model is naturally skewed toward one category.
+    threshold_map = {
+        "Automobile Insurance": 0.25,
+        "Health Insurance": 0.15,
+        "Comprehensive Life Policy": 0.10,
+    }
+
+    recommendations = [
+        {
+            "product": item["product"],
+            "probability": round(item["probability"], 4),
+            "trigger": item["trigger"]
+        }
+        for item in product_scores
+        if item["probability"] >= threshold_map.get(item["product"], 0.10)
+    ]
+
+    if not recommendations:
+        recommendations = [
+            {
+                "product": item["product"],
+                "probability": round(item["probability"], 4),
+                "trigger": item["trigger"]
+            }
+            for item in sorted(product_scores, key=lambda x: x["probability"], reverse=True)[:3]
+        ]
 
     return {
         "customer_id": cust_id,

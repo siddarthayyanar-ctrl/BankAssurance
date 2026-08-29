@@ -54,6 +54,7 @@ def build_prompt(question: str, context: Optional[str] = None) -> str:
 
 def generate_ai_response(prompt_text: str, context: Optional[str] = None, model_name: Optional[str] = None) -> str:
     #api_key = os.environ.get("GEMINI_API_KEY")
+    #api_key = os.environ.get("GEMINI_API_KEY")
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return "Gemini chat is unavailable because GEMINI_API_KEY is not set."
@@ -67,7 +68,7 @@ def generate_ai_response(prompt_text: str, context: Optional[str] = None, model_
     prompt = build_prompt(prompt_text, context)
 
     # Do not want to load gen AI for testing purpose, for development, we can comment this out and return a mock response 
-    return prompt  # Mock response for testing without actual API call
+    # return prompt  # Mock response for testing without actual API call
     try:
         response = client.models.generate_content(
             model=resolved_model,

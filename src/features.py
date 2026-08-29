@@ -55,6 +55,10 @@ def engineer_features():
     
     # Fill any NaNs resulting from customers who didn't spend in specific categories
     master_df.fillna(0, inplace=True)
+
+    # Exclude non-model metadata fields before exporting. These are useful for
+    # readability but not valid numeric inputs for sklearn/lightgbm models.
+    master_df = master_df.drop(columns=['customer_name'], errors='ignore')
     
     # 4. Create Ratios & Advanced Behavioral Indicators
     # Financial Stability Indicator: Savings Rate metric

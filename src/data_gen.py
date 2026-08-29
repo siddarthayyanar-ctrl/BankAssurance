@@ -31,9 +31,11 @@ for i in range(NUM_CUSTOMERS):
     credit_score = int(np.clip(np.random.normal(loc=700, scale=50), 300, 850))  # Credit score between 300 and 850
     tenure_months = random.randint(6, 120)  # Tenure between 6 month and 10 years
     account_balance = round(max(500, np.random.exponential(scale= annual_income / 12)), 2)
+    customer_name = fake.name()
     
     customers.append({
         "customer_id": customer_id,
+        "customer_name": customer_name,
         "age": age,
         "annual_income": annual_income,
         "credit_score": credit_score,

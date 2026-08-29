@@ -12,7 +12,10 @@ df = pd.read_csv("data/processed_features.csv")
 # Define targets and features
 target_cols = ['has_auto_ins', 'has_health_ins', 'has_life_ins']
 exclude_cols = ['customer_id', 'actual_12m_value'] + target_cols
-feature_cols = [col for col in df.columns if col not in exclude_cols]
+feature_cols = [
+    col for col in df.select_dtypes(include=['number', 'bool']).columns
+    if col not in exclude_cols
+]
 
 X = df[feature_cols]
 y = df[target_cols]
@@ -37,4 +40,5 @@ for i, col in enumerate(target_cols):
 
 # Save model artifact
 joblib.dump(classifier, "models/insurance_classifier.pkl")
+joblib.dump(feature_cols, "models/feature_columns.pkl")
 print("Insurance cross-sell prediction engine saved to 'models/' directory.")

@@ -1,9 +1,2843 @@
-{
-  "title": "Bancassurance Knowledge Base",
-  "context": "This knowledge file contains domain information used by the GenAI assistant.\n\n- Product types: Auto, Health, Life.\n- Typical conversion drivers: tenure, credit score, account balance, recent transaction behavior.\n- Cross-sell triggers: high propensity for Auto if frequent fuel and auto-service spending.\n\nUse this context to provide concise, product-aware answers to user queries.",
-  "entries": [
-    "Products: Auto, Health, Life",
-    "Drivers: tenure, credit_score, account_balance",
-    "Note: Update this JSON to add more domain facts"
-  ]
-}
+[
+  {
+    "intent_id": "1",
+    "category": "Banking - Account Opening",
+    "question": "How do I open a new savings account?",
+    "answer": "You can open a savings account online through our website/app, or by visiting a branch with valid ID proof, address proof, and a passport-size photo.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "1",
+    "category": "Banking - Account Opening",
+    "question": "I want to create a savings account",
+    "answer": " what's the process?",
+    "is_original": "You can open a savings account online through our website/app, or by visiting a branch with valid ID proof, address proof, and a passport-size photo.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "1",
+    "category": "Banking - Account Opening",
+    "question": "Steps to open a new bank savings account",
+    "answer": "You can open a savings account online through our website/app, or by visiting a branch with valid ID proof, address proof, and a passport-size photo.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "1",
+    "category": "Banking - Account Opening",
+    "question": "How can I start a savings account with you guys?",
+    "answer": "You can open a savings account online through our website/app, or by visiting a branch with valid ID proof, address proof, and a passport-size photo.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "2",
+    "category": "Banking - Account Opening",
+    "question": "What documents are required to open a bank account?",
+    "answer": "You typically need government-issued ID proof (passport, driver's license, national ID), address proof (utility bill, rental agreement), and a recent photograph.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "2",
+    "category": "Banking - Account Opening",
+    "question": "What papers do I need to submit for account opening?",
+    "answer": "You typically need government-issued ID proof (passport, driver's license, national ID), address proof (utility bill, rental agreement), and a recent photograph.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "2",
+    "category": "Banking - Account Opening",
+    "question": "List of documents needed for a new account",
+    "answer": "You typically need government-issued ID proof (passport, driver's license, national ID), address proof (utility bill, rental agreement), and a recent photograph.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "2",
+    "category": "Banking - Account Opening",
+    "question": "Which ID proofs are accepted for opening an account?",
+    "answer": "You typically need government-issued ID proof (passport, driver's license, national ID), address proof (utility bill, rental agreement), and a recent photograph.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "3",
+    "category": "Banking - Account Opening",
+    "question": "Can I open an account without visiting a branch?",
+    "answer": "Yes, most banks offer fully digital onboarding via their mobile app or website using e-KYC/video verification.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "3",
+    "category": "Banking - Account Opening",
+    "question": "Is it possible to open a bank account online without going anywhere?",
+    "answer": "Yes, most banks offer fully digital onboarding via their mobile app or website using e-KYC/video verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "3",
+    "category": "Banking - Account Opening",
+    "question": "Can I do account opening fully digitally?",
+    "answer": "Yes, most banks offer fully digital onboarding via their mobile app or website using e-KYC/video verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "3",
+    "category": "Banking - Account Opening",
+    "question": "Do I have to visit a branch to open an account?",
+    "answer": "Yes, most banks offer fully digital onboarding via their mobile app or website using e-KYC/video verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "4",
+    "category": "Banking - Account Opening",
+    "question": "What is the minimum balance required for a savings account?",
+    "answer": "Minimum balance requirements vary by account type and bank, typically ranging from zero-balance accounts to a few thousand in local currency.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "4",
+    "category": "Banking - Account Opening",
+    "question": "How much minimum balance do I need to maintain?",
+    "answer": "Minimum balance requirements vary by account type and bank, typically ranging from zero-balance accounts to a few thousand in local currency.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "4",
+    "category": "Banking - Account Opening",
+    "question": "Is there a minimum amount I must keep in my savings account?",
+    "answer": "Minimum balance requirements vary by account type and bank, typically ranging from zero-balance accounts to a few thousand in local currency.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "4",
+    "category": "Banking - Account Opening",
+    "question": "What's the least balance I can maintain without penalty?",
+    "answer": "Minimum balance requirements vary by account type and bank, typically ranging from zero-balance accounts to a few thousand in local currency.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "5",
+    "category": "Banking - Account Opening",
+    "question": "Can I open a joint bank account?",
+    "answer": "Yes, joint accounts can be opened with a family member, spouse, or business partner by providing both parties' KYC documents.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "5",
+    "category": "Banking - Account Opening",
+    "question": "How do I set up an account with my spouse?",
+    "answer": "Yes, joint accounts can be opened with a family member, spouse, or business partner by providing both parties' KYC documents.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "5",
+    "category": "Banking - Account Opening",
+    "question": "Is joint account opening available?",
+    "answer": "Yes, joint accounts can be opened with a family member, spouse, or business partner by providing both parties' KYC documents.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "5",
+    "category": "Banking - Account Opening",
+    "question": "Can two people share one bank account?",
+    "answer": "Yes, joint accounts can be opened with a family member, spouse, or business partner by providing both parties' KYC documents.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "6",
+    "category": "Banking - Account Opening",
+    "question": "How long does it take to activate a new account?",
+    "answer": "Digital accounts are often activated instantly to within 24 hours, while branch-opened accounts may take 1-3 business days after document verification.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "6",
+    "category": "Banking - Account Opening",
+    "question": "When will my new account become active?",
+    "answer": "Digital accounts are often activated instantly to within 24 hours, while branch-opened accounts may take 1-3 business days after document verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "6",
+    "category": "Banking - Account Opening",
+    "question": "How much time for account activation?",
+    "answer": "Digital accounts are often activated instantly to within 24 hours, while branch-opened accounts may take 1-3 business days after document verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "6",
+    "category": "Banking - Account Opening",
+    "question": "My account isn't active yet",
+    "answer": " how long should I wait?",
+    "is_original": "Digital accounts are often activated instantly to within 24 hours, while branch-opened accounts may take 1-3 business days after document verification.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "7",
+    "category": "Banking - Account Types",
+    "question": "What is the difference between a savings and current account?",
+    "answer": "A savings account earns interest and is meant for personal saving, while a current account is designed for frequent transactions, typically used by businesses, and usually doesn't earn interest.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "7",
+    "category": "Banking - Account Types",
+    "question": "Savings vs current account",
+    "answer": " what's different?",
+    "is_original": "A savings account earns interest and is meant for personal saving, while a current account is designed for frequent transactions, typically used by businesses, and usually doesn't earn interest.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "7",
+    "category": "Banking - Account Types",
+    "question": "Which account should I choose",
+    "answer": " savings or current?",
+    "is_original": "A savings account earns interest and is meant for personal saving, while a current account is designed for frequent transactions, typically used by businesses, and usually doesn't earn interest.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "7",
+    "category": "Banking - Account Types",
+    "question": "Explain savings account vs current account",
+    "answer": "A savings account earns interest and is meant for personal saving, while a current account is designed for frequent transactions, typically used by businesses, and usually doesn't earn interest.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "8",
+    "category": "Banking - Account Types",
+    "question": "What is a fixed deposit (FD)?",
+    "answer": "A fixed deposit is a savings instrument where you deposit a lump sum for a fixed tenure at a predetermined interest rate, higher than a regular savings account.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "8",
+    "category": "Banking - Account Types",
+    "question": "Can you explain what an FD is?",
+    "answer": "A fixed deposit is a savings instrument where you deposit a lump sum for a fixed tenure at a predetermined interest rate, higher than a regular savings account.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "8",
+    "category": "Banking - Account Types",
+    "question": "What does fixed deposit mean?",
+    "answer": "A fixed deposit is a savings instrument where you deposit a lump sum for a fixed tenure at a predetermined interest rate, higher than a regular savings account.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "8",
+    "category": "Banking - Account Types",
+    "question": "How does a fixed deposit work?",
+    "answer": "A fixed deposit is a savings instrument where you deposit a lump sum for a fixed tenure at a predetermined interest rate, higher than a regular savings account.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "9",
+    "category": "Banking - Account Types",
+    "question": "What is a recurring deposit (RD)?",
+    "answer": "A recurring deposit lets you invest a fixed amount every month for a set tenure and earn interest similar to a fixed deposit.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "9",
+    "category": "Banking - Account Types",
+    "question": "How does an RD account work?",
+    "answer": "A recurring deposit lets you invest a fixed amount every month for a set tenure and earn interest similar to a fixed deposit.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "9",
+    "category": "Banking - Account Types",
+    "question": "Explain recurring deposit to me",
+    "answer": "A recurring deposit lets you invest a fixed amount every month for a set tenure and earn interest similar to a fixed deposit.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "9",
+    "category": "Banking - Account Types",
+    "question": "What's a monthly recurring deposit scheme?",
+    "answer": "A recurring deposit lets you invest a fixed amount every month for a set tenure and earn interest similar to a fixed deposit.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "10",
+    "category": "Banking - Account Types",
+    "question": "What is a zero-balance account?",
+    "answer": "A zero-balance account has no minimum balance requirement, making it ideal for students, salaried employees, or basic banking needs.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "10",
+    "category": "Banking - Account Types",
+    "question": "Do you offer accounts with no minimum balance?",
+    "answer": "A zero-balance account has no minimum balance requirement, making it ideal for students, salaried employees, or basic banking needs.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "10",
+    "category": "Banking - Account Types",
+    "question": "What is a no-minimum-balance account?",
+    "answer": "A zero-balance account has no minimum balance requirement, making it ideal for students, salaried employees, or basic banking needs.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "10",
+    "category": "Banking - Account Types",
+    "question": "Can I have an account without keeping any balance?",
+    "answer": "A zero-balance account has no minimum balance requirement, making it ideal for students, salaried employees, or basic banking needs.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "11",
+    "category": "Banking - Cards",
+    "question": "How do I apply for a debit card?",
+    "answer": "A debit card is usually issued automatically when you open a savings/current account; you can also request one via net banking, mobile app, or at a branch.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "11",
+    "category": "Banking - Cards",
+    "question": "Where can I request a new debit card?",
+    "answer": "A debit card is usually issued automatically when you open a savings/current account; you can also request one via net banking, mobile app, or at a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "11",
+    "category": "Banking - Cards",
+    "question": "How to get a debit card issued?",
+    "answer": "A debit card is usually issued automatically when you open a savings/current account; you can also request one via net banking, mobile app, or at a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "11",
+    "category": "Banking - Cards",
+    "question": "I don't have a debit card yet",
+    "answer": " how do I apply?",
+    "is_original": "A debit card is usually issued automatically when you open a savings/current account; you can also request one via net banking, mobile app, or at a branch.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "12",
+    "category": "Banking - Cards",
+    "question": "How do I apply for a credit card?",
+    "answer": "You can apply for a credit card online, through the mobile app, or at a branch by submitting income proof, ID proof, and address proof for eligibility review.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "12",
+    "category": "Banking - Cards",
+    "question": "What's the process to get a credit card?",
+    "answer": "You can apply for a credit card online, through the mobile app, or at a branch by submitting income proof, ID proof, and address proof for eligibility review.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "12",
+    "category": "Banking - Cards",
+    "question": "How can I apply for a new credit card online?",
+    "answer": "You can apply for a credit card online, through the mobile app, or at a branch by submitting income proof, ID proof, and address proof for eligibility review.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "12",
+    "category": "Banking - Cards",
+    "question": "I want a credit card",
+    "answer": " what do I need to do?",
+    "is_original": "You can apply for a credit card online, through the mobile app, or at a branch by submitting income proof, ID proof, and address proof for eligibility review.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "13",
+    "category": "Banking - Cards",
+    "question": "What should I do if my debit/credit card is lost or stolen?",
+    "answer": "Immediately block the card via the mobile app, net banking, customer care helpline, or SMS banking to prevent unauthorized use, then request a replacement.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "13",
+    "category": "Banking - Cards",
+    "question": "I lost my card",
+    "answer": " what should I do?",
+    "is_original": "Immediately block the card via the mobile app, net banking, customer care helpline, or SMS banking to prevent unauthorized use, then request a replacement.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "13",
+    "category": "Banking - Cards",
+    "question": "My card got stolen",
+    "answer": " how do I block it?",
+    "is_original": "Immediately block the card via the mobile app, net banking, customer care helpline, or SMS banking to prevent unauthorized use, then request a replacement.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "13",
+    "category": "Banking - Cards",
+    "question": "How to report a missing debit card?",
+    "answer": "Immediately block the card via the mobile app, net banking, customer care helpline, or SMS banking to prevent unauthorized use, then request a replacement.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "14",
+    "category": "Banking - Cards",
+    "question": "How do I activate a new debit or credit card?",
+    "answer": "New cards can usually be activated via the mobile app, net banking, ATM PIN generation, or by calling customer care.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "14",
+    "category": "Banking - Cards",
+    "question": "What's the process to activate my new card?",
+    "answer": "New cards can usually be activated via the mobile app, net banking, ATM PIN generation, or by calling customer care.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "14",
+    "category": "Banking - Cards",
+    "question": "How do I set up my new debit card?",
+    "answer": "New cards can usually be activated via the mobile app, net banking, ATM PIN generation, or by calling customer care.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "14",
+    "category": "Banking - Cards",
+    "question": "I received my card",
+    "answer": " how do I turn it on?",
+    "is_original": "New cards can usually be activated via the mobile app, net banking, ATM PIN generation, or by calling customer care.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "15",
+    "category": "Banking - Cards",
+    "question": "What is the daily withdrawal limit on my debit card?",
+    "answer": "Daily withdrawal limits vary by card type and bank, typically ranging from a few hundred to a few thousand in local currency, and can often be adjusted in the app.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "15",
+    "category": "Banking - Cards",
+    "question": "How much cash can I withdraw per day?",
+    "answer": "Daily withdrawal limits vary by card type and bank, typically ranging from a few hundred to a few thousand in local currency, and can often be adjusted in the app.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "15",
+    "category": "Banking - Cards",
+    "question": "What's my ATM withdrawal limit?",
+    "answer": "Daily withdrawal limits vary by card type and bank, typically ranging from a few hundred to a few thousand in local currency, and can often be adjusted in the app.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "15",
+    "category": "Banking - Cards",
+    "question": "Is there a cap on daily ATM withdrawals?",
+    "answer": "Daily withdrawal limits vary by card type and bank, typically ranging from a few hundred to a few thousand in local currency, and can often be adjusted in the app.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "16",
+    "category": "Banking - Cards",
+    "question": "How can I increase my credit card limit?",
+    "answer": "You can request a credit limit increase through the mobile app, net banking, or customer care; approval depends on your credit history and income.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "16",
+    "category": "Banking - Cards",
+    "question": "How do I raise my credit card limit?",
+    "answer": "You can request a credit limit increase through the mobile app, net banking, or customer care; approval depends on your credit history and income.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "16",
+    "category": "Banking - Cards",
+    "question": "Can I get a higher credit limit on my card?",
+    "answer": "You can request a credit limit increase through the mobile app, net banking, or customer care; approval depends on your credit history and income.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "16",
+    "category": "Banking - Cards",
+    "question": "I want to increase my credit card spending limit",
+    "answer": "You can request a credit limit increase through the mobile app, net banking, or customer care; approval depends on your credit history and income.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "17",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How do I register for internet banking?",
+    "answer": "You can register for internet banking through your bank's website or app using your account number, registered mobile number, and card/PIN details for verification.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "17",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How can I sign up for net banking?",
+    "answer": "You can register for internet banking through your bank's website or app using your account number, registered mobile number, and card/PIN details for verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "17",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "What's the process to enable online banking?",
+    "answer": "You can register for internet banking through your bank's website or app using your account number, registered mobile number, and card/PIN details for verification.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "17",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "I want to activate net banking",
+    "answer": " how do I start?",
+    "is_original": "You can register for internet banking through your bank's website or app using your account number, registered mobile number, and card/PIN details for verification.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "18",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "I forgot my net banking password. How do I reset it?",
+    "answer": "Use the 'Forgot Password' option on the login page and follow the OTP-based verification process to reset your password.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "18",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How do I recover my online banking password?",
+    "answer": "Use the 'Forgot Password' option on the login page and follow the OTP-based verification process to reset your password.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "18",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "I can't remember my net banking login password",
+    "answer": "Use the 'Forgot Password' option on the login page and follow the OTP-based verification process to reset your password.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "18",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Steps to reset internet banking password",
+    "answer": "Use the 'Forgot Password' option on the login page and follow the OTP-based verification process to reset your password.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "19",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Is mobile banking safe?",
+    "answer": "Yes, mobile banking apps use encryption, multi-factor authentication, and secure login methods; however, you should never share your PIN, password, or OTP with anyone.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "19",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Is it secure to use the banking app?",
+    "answer": "Yes, mobile banking apps use encryption, multi-factor authentication, and secure login methods; however, you should never share your PIN, password, or OTP with anyone.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "19",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Can I trust mobile banking with my money?",
+    "answer": "Yes, mobile banking apps use encryption, multi-factor authentication, and secure login methods; however, you should never share your PIN, password, or OTP with anyone.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "19",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How safe is the mobile app for transactions?",
+    "answer": "Yes, mobile banking apps use encryption, multi-factor authentication, and secure login methods; however, you should never share your PIN, password, or OTP with anyone.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "20",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How do I download the bank's mobile app?",
+    "answer": "You can download the official app from the Google Play Store or Apple App Store by searching for the bank's name.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "20",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Where can I get the banking app?",
+    "answer": "You can download the official app from the Google Play Store or Apple App Store by searching for the bank's name.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "20",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How do I install the mobile banking application?",
+    "answer": "You can download the official app from the Google Play Store or Apple App Store by searching for the bank's name.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "20",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Is there an app I can download for banking?",
+    "answer": "You can download the official app from the Google Play Store or Apple App Store by searching for the bank's name.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "21",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Can I update my mobile number online?",
+    "answer": "Yes, in most cases you can update your registered mobile number via net banking or the app, though some banks require branch verification for security.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "21",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "How do I change my registered phone number?",
+    "answer": "Yes, in most cases you can update your registered mobile number via net banking or the app, though some banks require branch verification for security.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "21",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "I got a new number",
+    "answer": " how do I update it with the bank?",
+    "is_original": "Yes, in most cases you can update your registered mobile number via net banking or the app, though some banks require branch verification for security.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "21",
+    "category": "Banking - Online/Mobile Banking",
+    "question": "Can I change my mobile number without visiting a branch?",
+    "answer": "Yes, in most cases you can update your registered mobile number via net banking or the app, though some banks require branch verification for security.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "22",
+    "category": "Banking - Transactions",
+    "question": "How do I transfer money to another bank account?",
+    "answer": "You can transfer funds using NEFT, RTGS, IMPS, or UPI through net banking, mobile banking, or at a branch, depending on the amount and urgency.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "22",
+    "category": "Banking - Transactions",
+    "question": "How can I send money to someone else's account?",
+    "answer": "You can transfer funds using NEFT, RTGS, IMPS, or UPI through net banking, mobile banking, or at a branch, depending on the amount and urgency.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "22",
+    "category": "Banking - Transactions",
+    "question": "What's the way to do a fund transfer?",
+    "answer": "You can transfer funds using NEFT, RTGS, IMPS, or UPI through net banking, mobile banking, or at a branch, depending on the amount and urgency.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "22",
+    "category": "Banking - Transactions",
+    "question": "I need to transfer money to another bank",
+    "answer": " how?",
+    "is_original": "You can transfer funds using NEFT, RTGS, IMPS, or UPI through net banking, mobile banking, or at a branch, depending on the amount and urgency.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "23",
+    "category": "Banking - Transactions",
+    "question": "What is the difference between NEFT",
+    "answer": " RTGS",
+    "is_original": " and IMPS?",
+    "extra_1": "NEFT processes transfers in batches, RTGS is for high-value real-time transfers, and IMPS enables instant transfers 24/7, including on holidays.",
+    "extra_2": "1"
+  },
+  {
+    "intent_id": "23",
+    "category": "Banking - Transactions",
+    "question": "NEFT vs RTGS vs IMPS",
+    "answer": " what's the difference?",
+    "is_original": "NEFT processes transfers in batches, RTGS is for high-value real-time transfers, and IMPS enables instant transfers 24/7, including on holidays.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "23",
+    "category": "Banking - Transactions",
+    "question": "Which is faster",
+    "answer": " NEFT or IMPS?",
+    "is_original": "NEFT processes transfers in batches, RTGS is for high-value real-time transfers, and IMPS enables instant transfers 24/7, including on holidays.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "23",
+    "category": "Banking - Transactions",
+    "question": "Explain NEFT RTGS IMPS transfer types",
+    "answer": "NEFT processes transfers in batches, RTGS is for high-value real-time transfers, and IMPS enables instant transfers 24/7, including on holidays.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "24",
+    "category": "Banking - Transactions",
+    "question": "Is there a limit on UPI transactions?",
+    "answer": "Yes, UPI transaction limits vary by bank and app, typically capped at a certain amount per transaction and per day for security reasons.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "24",
+    "category": "Banking - Transactions",
+    "question": "How much money can I send via UPI in a day?",
+    "answer": "Yes, UPI transaction limits vary by bank and app, typically capped at a certain amount per transaction and per day for security reasons.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "24",
+    "category": "Banking - Transactions",
+    "question": "What's the maximum UPI transfer amount?",
+    "answer": "Yes, UPI transaction limits vary by bank and app, typically capped at a certain amount per transaction and per day for security reasons.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "24",
+    "category": "Banking - Transactions",
+    "question": "Is there a cap on Google Pay/PhonePe transactions?",
+    "answer": "Yes, UPI transaction limits vary by bank and app, typically capped at a certain amount per transaction and per day for security reasons.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "25",
+    "category": "Banking - Transactions",
+    "question": "How long does an NEFT transfer take?",
+    "answer": "NEFT transfers are processed in half-hourly batches and are usually credited within 30 minutes to 2 hours.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "25",
+    "category": "Banking - Transactions",
+    "question": "How much time does NEFT take to credit?",
+    "answer": "NEFT transfers are processed in half-hourly batches and are usually credited within 30 minutes to 2 hours.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "25",
+    "category": "Banking - Transactions",
+    "question": "When will my NEFT payment reach the receiver?",
+    "answer": "NEFT transfers are processed in half-hourly batches and are usually credited within 30 minutes to 2 hours.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "25",
+    "category": "Banking - Transactions",
+    "question": "Is NEFT instant or does it take time?",
+    "answer": "NEFT transfers are processed in half-hourly batches and are usually credited within 30 minutes to 2 hours.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "26",
+    "category": "Banking - Transactions",
+    "question": "Why was my transaction declined?",
+    "answer": "Transactions can be declined due to insufficient balance, incorrect details, exceeding limits, network issues, or security flags; checking your app or contacting support can clarify the reason.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "26",
+    "category": "Banking - Transactions",
+    "question": "My payment failed",
+    "answer": " why?",
+    "is_original": "Transactions can be declined due to insufficient balance, incorrect details, exceeding limits, network issues, or security flags; checking your app or contacting support can clarify the reason.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "26",
+    "category": "Banking - Transactions",
+    "question": "Why is my card transaction not going through?",
+    "answer": "Transactions can be declined due to insufficient balance, incorrect details, exceeding limits, network issues, or security flags; checking your app or contacting support can clarify the reason.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "26",
+    "category": "Banking - Transactions",
+    "question": "Reasons for a declined bank transaction",
+    "answer": "Transactions can be declined due to insufficient balance, incorrect details, exceeding limits, network issues, or security flags; checking your app or contacting support can clarify the reason.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "27",
+    "category": "Banking - Transactions",
+    "question": "How do I set up a standing instruction for recurring payments?",
+    "answer": "You can set up standing instructions through net banking or the mobile app by specifying the payee, amount, frequency, and start/end dates.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "27",
+    "category": "Banking - Transactions",
+    "question": "How can I automate my monthly bill payments?",
+    "answer": "You can set up standing instructions through net banking or the mobile app by specifying the payee, amount, frequency, and start/end dates.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "27",
+    "category": "Banking - Transactions",
+    "question": "I want to schedule recurring transfers",
+    "answer": " how?",
+    "is_original": "You can set up standing instructions through net banking or the mobile app by specifying the payee, amount, frequency, and start/end dates.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "27",
+    "category": "Banking - Transactions",
+    "question": "What is a standing instruction and how do I create one?",
+    "answer": "You can set up standing instructions through net banking or the mobile app by specifying the payee, amount, frequency, and start/end dates.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "28",
+    "category": "Banking - Loans",
+    "question": "What types of loans does the bank offer?",
+    "answer": "Common loan types include personal loans, home loans, auto loans, education loans, and business loans, each with different eligibility and interest terms.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "28",
+    "category": "Banking - Loans",
+    "question": "What loan options are available?",
+    "answer": "Common loan types include personal loans, home loans, auto loans, education loans, and business loans, each with different eligibility and interest terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "28",
+    "category": "Banking - Loans",
+    "question": "Which kinds of loans can I apply for?",
+    "answer": "Common loan types include personal loans, home loans, auto loans, education loans, and business loans, each with different eligibility and interest terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "28",
+    "category": "Banking - Loans",
+    "question": "Do you offer home loans and personal loans?",
+    "answer": "Common loan types include personal loans, home loans, auto loans, education loans, and business loans, each with different eligibility and interest terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "29",
+    "category": "Banking - Loans",
+    "question": "How do I check my loan eligibility?",
+    "answer": "You can use the bank's online eligibility calculator by entering your income, existing liabilities, and loan tenure, or consult a loan officer.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "29",
+    "category": "Banking - Loans",
+    "question": "Am I eligible for a loan?",
+    "answer": "You can use the bank's online eligibility calculator by entering your income, existing liabilities, and loan tenure, or consult a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "29",
+    "category": "Banking - Loans",
+    "question": "How can I find out my loan eligibility amount?",
+    "answer": "You can use the bank's online eligibility calculator by entering your income, existing liabilities, and loan tenure, or consult a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "29",
+    "category": "Banking - Loans",
+    "question": "Is there a way to check loan qualification online?",
+    "answer": "You can use the bank's online eligibility calculator by entering your income, existing liabilities, and loan tenure, or consult a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "30",
+    "category": "Banking - Loans",
+    "question": "What documents are needed for a personal loan application?",
+    "answer": "Typically required: ID proof, address proof, income proof (salary slips or tax returns), and bank statements from the last few months.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "30",
+    "category": "Banking - Loans",
+    "question": "What paperwork do I need for a personal loan?",
+    "answer": "Typically required: ID proof, address proof, income proof (salary slips or tax returns), and bank statements from the last few months.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "30",
+    "category": "Banking - Loans",
+    "question": "Documents required to apply for a personal loan",
+    "answer": "Typically required: ID proof, address proof, income proof (salary slips or tax returns), and bank statements from the last few months.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "30",
+    "category": "Banking - Loans",
+    "question": "What do I submit when applying for a personal loan?",
+    "answer": "Typically required: ID proof, address proof, income proof (salary slips or tax returns), and bank statements from the last few months.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "31",
+    "category": "Banking - Loans",
+    "question": "How can I check my loan application status?",
+    "answer": "You can track your loan application status through the mobile app, net banking, or by contacting customer support with your application reference number.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "31",
+    "category": "Banking - Loans",
+    "question": "Where can I track my loan application?",
+    "answer": "You can track your loan application status through the mobile app, net banking, or by contacting customer support with your application reference number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "31",
+    "category": "Banking - Loans",
+    "question": "Has my loan application been approved yet?",
+    "answer": "You can track your loan application status through the mobile app, net banking, or by contacting customer support with your application reference number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "31",
+    "category": "Banking - Loans",
+    "question": "How do I know the status of my submitted loan?",
+    "answer": "You can track your loan application status through the mobile app, net banking, or by contacting customer support with your application reference number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "32",
+    "category": "Banking - Loans",
+    "question": "What is the current interest rate on home loans?",
+    "answer": "Home loan interest rates vary based on market conditions, loan amount, tenure, and your credit profile; please check the current rates on the bank's website or with a loan officer.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "32",
+    "category": "Banking - Loans",
+    "question": "What's the home loan interest rate right now?",
+    "answer": "Home loan interest rates vary based on market conditions, loan amount, tenure, and your credit profile; please check the current rates on the bank's website or with a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "32",
+    "category": "Banking - Loans",
+    "question": "How much interest will I pay on a home loan?",
+    "answer": "Home loan interest rates vary based on market conditions, loan amount, tenure, and your credit profile; please check the current rates on the bank's website or with a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "32",
+    "category": "Banking - Loans",
+    "question": "Tell me the housing loan interest rate",
+    "answer": "Home loan interest rates vary based on market conditions, loan amount, tenure, and your credit profile; please check the current rates on the bank's website or with a loan officer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "33",
+    "category": "Banking - Loans",
+    "question": "Can I prepay or foreclose my loan early?",
+    "answer": "Yes, most loans allow prepayment or foreclosure, though some may charge a prepayment penalty depending on the loan type and terms.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "33",
+    "category": "Banking - Loans",
+    "question": "Can I pay off my loan before the tenure ends?",
+    "answer": "Yes, most loans allow prepayment or foreclosure, though some may charge a prepayment penalty depending on the loan type and terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "33",
+    "category": "Banking - Loans",
+    "question": "Is early loan closure allowed?",
+    "answer": "Yes, most loans allow prepayment or foreclosure, though some may charge a prepayment penalty depending on the loan type and terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "33",
+    "category": "Banking - Loans",
+    "question": "Are there charges for closing my loan early?",
+    "answer": "Yes, most loans allow prepayment or foreclosure, though some may charge a prepayment penalty depending on the loan type and terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "34",
+    "category": "Banking - Loans",
+    "question": "How is my EMI calculated?",
+    "answer": "EMI is calculated based on the loan amount, interest rate, and tenure using a standard amortization formula; you can use the bank's EMI calculator for an estimate.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "34",
+    "category": "Banking - Loans",
+    "question": "How do you compute the monthly loan installment?",
+    "answer": "EMI is calculated based on the loan amount, interest rate, and tenure using a standard amortization formula; you can use the bank's EMI calculator for an estimate.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "34",
+    "category": "Banking - Loans",
+    "question": "What factors decide my EMI amount?",
+    "answer": "EMI is calculated based on the loan amount, interest rate, and tenure using a standard amortization formula; you can use the bank's EMI calculator for an estimate.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "34",
+    "category": "Banking - Loans",
+    "question": "Is there an EMI calculator I can use?",
+    "answer": "EMI is calculated based on the loan amount, interest rate, and tenure using a standard amortization formula; you can use the bank's EMI calculator for an estimate.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "35",
+    "category": "Banking - Credit Score",
+    "question": "What is a credit score and why does it matter?",
+    "answer": "A credit score reflects your creditworthiness based on repayment history and credit usage; a higher score improves your chances of loan and credit card approval at better rates.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "35",
+    "category": "Banking - Credit Score",
+    "question": "Why is my credit score important?",
+    "answer": "A credit score reflects your creditworthiness based on repayment history and credit usage; a higher score improves your chances of loan and credit card approval at better rates.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "35",
+    "category": "Banking - Credit Score",
+    "question": "What does a credit score mean?",
+    "answer": "A credit score reflects your creditworthiness based on repayment history and credit usage; a higher score improves your chances of loan and credit card approval at better rates.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "35",
+    "category": "Banking - Credit Score",
+    "question": "How does credit score affect my loan approval?",
+    "answer": "A credit score reflects your creditworthiness based on repayment history and credit usage; a higher score improves your chances of loan and credit card approval at better rates.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "36",
+    "category": "Banking - Credit Score",
+    "question": "How can I check my credit score for free?",
+    "answer": "Many banks and credit bureaus offer a free credit score check through their website or app, usually once a year or through partnered services.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "36",
+    "category": "Banking - Credit Score",
+    "question": "Where can I see my credit score without paying?",
+    "answer": "Many banks and credit bureaus offer a free credit score check through their website or app, usually once a year or through partnered services.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "36",
+    "category": "Banking - Credit Score",
+    "question": "Is there a free way to check my CIBIL score?",
+    "answer": "Many banks and credit bureaus offer a free credit score check through their website or app, usually once a year or through partnered services.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "36",
+    "category": "Banking - Credit Score",
+    "question": "How do I find out my current credit score?",
+    "answer": "Many banks and credit bureaus offer a free credit score check through their website or app, usually once a year or through partnered services.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "37",
+    "category": "Banking - Credit Score",
+    "question": "How can I improve my credit score?",
+    "answer": "Pay bills and EMIs on time, keep credit utilization low, avoid multiple loan applications in a short period, and maintain a healthy credit mix.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "37",
+    "category": "Banking - Credit Score",
+    "question": "What can I do to raise my credit score?",
+    "answer": "Pay bills and EMIs on time, keep credit utilization low, avoid multiple loan applications in a short period, and maintain a healthy credit mix.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "37",
+    "category": "Banking - Credit Score",
+    "question": "Tips to boost my credit rating",
+    "answer": "Pay bills and EMIs on time, keep credit utilization low, avoid multiple loan applications in a short period, and maintain a healthy credit mix.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "37",
+    "category": "Banking - Credit Score",
+    "question": "My credit score is low",
+    "answer": " how do I fix it?",
+    "is_original": "Pay bills and EMIs on time, keep credit utilization low, avoid multiple loan applications in a short period, and maintain a healthy credit mix.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "38",
+    "category": "Banking - Fees & Charges",
+    "question": "What fees are associated with maintaining a savings account?",
+    "answer": "Common charges include non-maintenance of minimum balance, ATM usage beyond free limits, cheque book issuance, and account statement requests; charges vary by bank.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "38",
+    "category": "Banking - Fees & Charges",
+    "question": "Are there any hidden charges on my savings account?",
+    "answer": "Common charges include non-maintenance of minimum balance, ATM usage beyond free limits, cheque book issuance, and account statement requests; charges vary by bank.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "38",
+    "category": "Banking - Fees & Charges",
+    "question": "What account maintenance fees should I expect?",
+    "answer": "Common charges include non-maintenance of minimum balance, ATM usage beyond free limits, cheque book issuance, and account statement requests; charges vary by bank.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "38",
+    "category": "Banking - Fees & Charges",
+    "question": "Do savings accounts have monthly charges?",
+    "answer": "Common charges include non-maintenance of minimum balance, ATM usage beyond free limits, cheque book issuance, and account statement requests; charges vary by bank.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "39",
+    "category": "Banking - Fees & Charges",
+    "question": "Are there charges for using another bank's ATM?",
+    "answer": "Yes, banks typically allow a limited number of free transactions per month at other banks' ATMs, after which a small fee applies.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "39",
+    "category": "Banking - Fees & Charges",
+    "question": "Does it cost money to use a different bank's ATM?",
+    "answer": "Yes, banks typically allow a limited number of free transactions per month at other banks' ATMs, after which a small fee applies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "39",
+    "category": "Banking - Fees & Charges",
+    "question": "Is there a fee for withdrawing from another bank's ATM?",
+    "answer": "Yes, banks typically allow a limited number of free transactions per month at other banks' ATMs, after which a small fee applies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "39",
+    "category": "Banking - Fees & Charges",
+    "question": "How many free ATM transactions do I get at other banks?",
+    "answer": "Yes, banks typically allow a limited number of free transactions per month at other banks' ATMs, after which a small fee applies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "40",
+    "category": "Banking - Fees & Charges",
+    "question": "What is the annual fee on my credit card?",
+    "answer": "Annual fees vary by card type and are often waived if you meet a minimum annual spending threshold; check your card's terms for specifics.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "40",
+    "category": "Banking - Fees & Charges",
+    "question": "How much do I pay yearly for my credit card?",
+    "answer": "Annual fees vary by card type and are often waived if you meet a minimum annual spending threshold; check your card's terms for specifics.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "40",
+    "category": "Banking - Fees & Charges",
+    "question": "Is there a yearly charge on credit cards?",
+    "answer": "Annual fees vary by card type and are often waived if you meet a minimum annual spending threshold; check your card's terms for specifics.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "40",
+    "category": "Banking - Fees & Charges",
+    "question": "Can I get my credit card annual fee waived?",
+    "answer": "Annual fees vary by card type and are often waived if you meet a minimum annual spending threshold; check your card's terms for specifics.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "41",
+    "category": "Banking - Customer Service",
+    "question": "How do I contact customer support?",
+    "answer": "You can reach customer support via the helpline number, in-app chat, email, or by visiting your nearest branch.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "41",
+    "category": "Banking - Customer Service",
+    "question": "What's the customer care number?",
+    "answer": "You can reach customer support via the helpline number, in-app chat, email, or by visiting your nearest branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "41",
+    "category": "Banking - Customer Service",
+    "question": "How can I talk to someone at the bank?",
+    "answer": "You can reach customer support via the helpline number, in-app chat, email, or by visiting your nearest branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "41",
+    "category": "Banking - Customer Service",
+    "question": "I need help",
+    "answer": " how do I reach support?",
+    "is_original": "You can reach customer support via the helpline number, in-app chat, email, or by visiting your nearest branch.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "42",
+    "category": "Banking - Customer Service",
+    "question": "What are the bank's working hours?",
+    "answer": "Branch working hours are typically weekdays and half-day Saturdays, while net banking and the mobile app are available 24/7.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "42",
+    "category": "Banking - Customer Service",
+    "question": "When is the branch open?",
+    "answer": "Branch working hours are typically weekdays and half-day Saturdays, while net banking and the mobile app are available 24/7.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "42",
+    "category": "Banking - Customer Service",
+    "question": "What time does the bank close?",
+    "answer": "Branch working hours are typically weekdays and half-day Saturdays, while net banking and the mobile app are available 24/7.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "42",
+    "category": "Banking - Customer Service",
+    "question": "Is the bank open on weekends?",
+    "answer": "Branch working hours are typically weekdays and half-day Saturdays, while net banking and the mobile app are available 24/7.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "43",
+    "category": "Banking - Customer Service",
+    "question": "How do I file a complaint against the bank?",
+    "answer": "You can file a complaint through the app, website, customer care helpline, or by writing to the branch manager; unresolved issues can be escalated to the banking ombudsman.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "43",
+    "category": "Banking - Customer Service",
+    "question": "I want to raise a complaint",
+    "answer": " how do I do that?",
+    "is_original": "You can file a complaint through the app, website, customer care helpline, or by writing to the branch manager; unresolved issues can be escalated to the banking ombudsman.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "43",
+    "category": "Banking - Customer Service",
+    "question": "How can I report an issue with the bank?",
+    "answer": "You can file a complaint through the app, website, customer care helpline, or by writing to the branch manager; unresolved issues can be escalated to the banking ombudsman.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "43",
+    "category": "Banking - Customer Service",
+    "question": "Where do I lodge a grievance against the bank?",
+    "answer": "You can file a complaint through the app, website, customer care helpline, or by writing to the branch manager; unresolved issues can be escalated to the banking ombudsman.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "44",
+    "category": "Banking - Customer Service",
+    "question": "How do I close my bank account?",
+    "answer": "Visit your branch with a written request and your passbook/chequebook, or check if account closure is available through net banking, and settle any pending dues first.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "44",
+    "category": "Banking - Customer Service",
+    "question": "What's the process to shut down my account?",
+    "answer": "Visit your branch with a written request and your passbook/chequebook, or check if account closure is available through net banking, and settle any pending dues first.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "44",
+    "category": "Banking - Customer Service",
+    "question": "How can I terminate my bank account?",
+    "answer": "Visit your branch with a written request and your passbook/chequebook, or check if account closure is available through net banking, and settle any pending dues first.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "44",
+    "category": "Banking - Customer Service",
+    "question": "I want to close my savings account",
+    "answer": " how?",
+    "is_original": "Visit your branch with a written request and your passbook/chequebook, or check if account closure is available through net banking, and settle any pending dues first.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "45",
+    "category": "Banking - Security",
+    "question": "What should I do if I suspect fraud on my account?",
+    "answer": "Immediately block your card/account through the app or helpline, change your passwords, and report the fraud to the bank and relevant authorities.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "45",
+    "category": "Banking - Security",
+    "question": "I think someone accessed my account without permission",
+    "answer": " what now?",
+    "is_original": "Immediately block your card/account through the app or helpline, change your passwords, and report the fraud to the bank and relevant authorities.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "45",
+    "category": "Banking - Security",
+    "question": "How do I report suspicious activity on my account?",
+    "answer": "Immediately block your card/account through the app or helpline, change your passwords, and report the fraud to the bank and relevant authorities.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "45",
+    "category": "Banking - Security",
+    "question": "I see an unauthorized transaction",
+    "answer": " what should I do?",
+    "is_original": "Immediately block your card/account through the app or helpline, change your passwords, and report the fraud to the bank and relevant authorities.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "46",
+    "category": "Banking - Security",
+    "question": "How do I recognize a phishing scam related to my bank?",
+    "answer": "Be cautious of unsolicited calls, emails, or messages asking for your PIN, password, OTP, or card details; banks never ask for this information directly.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "46",
+    "category": "Banking - Security",
+    "question": "How can I tell if a bank email/call is fake?",
+    "answer": "Be cautious of unsolicited calls, emails, or messages asking for your PIN, password, OTP, or card details; banks never ask for this information directly.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "46",
+    "category": "Banking - Security",
+    "question": "What are signs of a banking phishing scam?",
+    "answer": "Be cautious of unsolicited calls, emails, or messages asking for your PIN, password, OTP, or card details; banks never ask for this information directly.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "46",
+    "category": "Banking - Security",
+    "question": "Someone called asking for my card details",
+    "answer": " is that legit?",
+    "is_original": "Be cautious of unsolicited calls, emails, or messages asking for your PIN, password, OTP, or card details; banks never ask for this information directly.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "47",
+    "category": "Banking - Security",
+    "question": "Should I share my OTP with anyone?",
+    "answer": "No, you should never share your OTP, PIN, CVV, or password with anyone, including people claiming to be bank representatives.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "47",
+    "category": "Banking - Security",
+    "question": "Is it okay to give my OTP to a bank caller?",
+    "answer": "No, you should never share your OTP, PIN, CVV, or password with anyone, including people claiming to be bank representatives.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "47",
+    "category": "Banking - Security",
+    "question": "Can I tell someone my OTP if they say they're from the bank?",
+    "answer": "No, you should never share your OTP, PIN, CVV, or password with anyone, including people claiming to be bank representatives.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "47",
+    "category": "Banking - Security",
+    "question": "Is sharing OTP safe in any situation?",
+    "answer": "No, you should never share your OTP, PIN, CVV, or password with anyone, including people claiming to be bank representatives.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "48",
+    "category": "Banking - Cheques",
+    "question": "How do I request a new chequebook?",
+    "answer": "You can request a chequebook through net banking, the mobile app, ATM, or by visiting a branch.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "48",
+    "category": "Banking - Cheques",
+    "question": "How can I order a new cheque book?",
+    "answer": "You can request a chequebook through net banking, the mobile app, ATM, or by visiting a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "48",
+    "category": "Banking - Cheques",
+    "question": "I've run out of cheques",
+    "answer": " how do I get more?",
+    "is_original": "You can request a chequebook through net banking, the mobile app, ATM, or by visiting a branch.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "48",
+    "category": "Banking - Cheques",
+    "question": "Where can I apply for a chequebook?",
+    "answer": "You can request a chequebook through net banking, the mobile app, ATM, or by visiting a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "49",
+    "category": "Banking - Cheques",
+    "question": "What should I do if a cheque bounces?",
+    "answer": "A bounced cheque usually incurs a penalty fee; you should contact the payee and ensure sufficient funds before reissuing or resubmitting the cheque.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "49",
+    "category": "Banking - Cheques",
+    "question": "My cheque got dishonored",
+    "answer": " what happens next?",
+    "is_original": "A bounced cheque usually incurs a penalty fee; you should contact the payee and ensure sufficient funds before reissuing or resubmitting the cheque.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "49",
+    "category": "Banking - Cheques",
+    "question": "What are the consequences of a bounced cheque?",
+    "answer": "A bounced cheque usually incurs a penalty fee; you should contact the payee and ensure sufficient funds before reissuing or resubmitting the cheque.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "49",
+    "category": "Banking - Cheques",
+    "question": "Why did my cheque get rejected and what do I do?",
+    "answer": "A bounced cheque usually incurs a penalty fee; you should contact the payee and ensure sufficient funds before reissuing or resubmitting the cheque.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "50",
+    "category": "Banking - Statements",
+    "question": "How do I get my bank account statement?",
+    "answer": "You can download statements instantly through net banking or the mobile app, or request a printed copy at a branch.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "50",
+    "category": "Banking - Statements",
+    "question": "Where can I download my account statement?",
+    "answer": "You can download statements instantly through net banking or the mobile app, or request a printed copy at a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "50",
+    "category": "Banking - Statements",
+    "question": "How do I view my past transactions?",
+    "answer": "You can download statements instantly through net banking or the mobile app, or request a printed copy at a branch.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "50",
+    "category": "Banking - Statements",
+    "question": "I need a printed bank statement",
+    "answer": " how do I get one?",
+    "is_original": "You can download statements instantly through net banking or the mobile app, or request a printed copy at a branch.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "51",
+    "category": "Insurance - Basics",
+    "question": "What is insurance?",
+    "answer": "Insurance is a contract where you pay a premium to an insurer in exchange for financial protection or reimbursement against specified losses, such as illness, accident, or property damage.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "51",
+    "category": "Insurance - Basics",
+    "question": "Can you explain what insurance means?",
+    "answer": "Insurance is a contract where you pay a premium to an insurer in exchange for financial protection or reimbursement against specified losses, such as illness, accident, or property damage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "51",
+    "category": "Insurance - Basics",
+    "question": "What does having insurance actually do for me?",
+    "answer": "Insurance is a contract where you pay a premium to an insurer in exchange for financial protection or reimbursement against specified losses, such as illness, accident, or property damage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "51",
+    "category": "Insurance - Basics",
+    "question": "How does insurance work in simple terms?",
+    "answer": "Insurance is a contract where you pay a premium to an insurer in exchange for financial protection or reimbursement against specified losses, such as illness, accident, or property damage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "52",
+    "category": "Insurance - Basics",
+    "question": "What is the difference between life insurance and general insurance?",
+    "answer": "Life insurance provides financial protection to your family in case of death or maturity benefits, while general insurance covers non-life risks like health, motor, home, and travel.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "52",
+    "category": "Insurance - Basics",
+    "question": "Life insurance vs general insurance",
+    "answer": " how are they different?",
+    "is_original": "Life insurance provides financial protection to your family in case of death or maturity benefits, while general insurance covers non-life risks like health, motor, home, and travel.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "52",
+    "category": "Insurance - Basics",
+    "question": "Is health insurance the same as life insurance?",
+    "answer": "Life insurance provides financial protection to your family in case of death or maturity benefits, while general insurance covers non-life risks like health, motor, home, and travel.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "52",
+    "category": "Insurance - Basics",
+    "question": "What types of insurance fall under general insurance?",
+    "answer": "Life insurance provides financial protection to your family in case of death or maturity benefits, while general insurance covers non-life risks like health, motor, home, and travel.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "53",
+    "category": "Insurance - Basics",
+    "question": "What is a premium?",
+    "answer": "A premium is the amount you pay periodically (monthly, quarterly, or annually) to keep your insurance policy active.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "53",
+    "category": "Insurance - Basics",
+    "question": "What does 'premium' mean in insurance?",
+    "answer": "A premium is the amount you pay periodically (monthly, quarterly, or annually) to keep your insurance policy active.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "53",
+    "category": "Insurance - Basics",
+    "question": "How often do I need to pay my premium?",
+    "answer": "A premium is the amount you pay periodically (monthly, quarterly, or annually) to keep your insurance policy active.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "53",
+    "category": "Insurance - Basics",
+    "question": "What is the premium amount used for?",
+    "answer": "A premium is the amount you pay periodically (monthly, quarterly, or annually) to keep your insurance policy active.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "54",
+    "category": "Insurance - Basics",
+    "question": "What is a sum insured?",
+    "answer": "The sum insured is the maximum amount the insurer will pay in case of a valid claim under your policy.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "54",
+    "category": "Insurance - Basics",
+    "question": "What does sum insured mean?",
+    "answer": "The sum insured is the maximum amount the insurer will pay in case of a valid claim under your policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "54",
+    "category": "Insurance - Basics",
+    "question": "How much will the insurer pay me on a claim?",
+    "answer": "The sum insured is the maximum amount the insurer will pay in case of a valid claim under your policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "54",
+    "category": "Insurance - Basics",
+    "question": "What's the maximum coverage amount on my policy?",
+    "answer": "The sum insured is the maximum amount the insurer will pay in case of a valid claim under your policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "55",
+    "category": "Insurance - Basics",
+    "question": "What is a policy term?",
+    "answer": "The policy term is the duration for which the insurance coverage is valid, after which the policy needs to be renewed or matures.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "55",
+    "category": "Insurance - Basics",
+    "question": "What does 'policy term' mean?",
+    "answer": "The policy term is the duration for which the insurance coverage is valid, after which the policy needs to be renewed or matures.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "55",
+    "category": "Insurance - Basics",
+    "question": "How long does my policy stay valid?",
+    "answer": "The policy term is the duration for which the insurance coverage is valid, after which the policy needs to be renewed or matures.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "55",
+    "category": "Insurance - Basics",
+    "question": "What happens when the policy term ends?",
+    "answer": "The policy term is the duration for which the insurance coverage is valid, after which the policy needs to be renewed or matures.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "56",
+    "category": "Insurance - Life Insurance",
+    "question": "What is term insurance?",
+    "answer": "Term insurance is a pure life insurance plan that provides a death benefit to your beneficiaries if you pass away during the policy term, usually at a lower premium than other life policies.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "56",
+    "category": "Insurance - Life Insurance",
+    "question": "Can you explain term life insurance?",
+    "answer": "Term insurance is a pure life insurance plan that provides a death benefit to your beneficiaries if you pass away during the policy term, usually at a lower premium than other life policies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "56",
+    "category": "Insurance - Life Insurance",
+    "question": "What does a term insurance plan cover?",
+    "answer": "Term insurance is a pure life insurance plan that provides a death benefit to your beneficiaries if you pass away during the policy term, usually at a lower premium than other life policies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "56",
+    "category": "Insurance - Life Insurance",
+    "question": "How does term insurance work?",
+    "answer": "Term insurance is a pure life insurance plan that provides a death benefit to your beneficiaries if you pass away during the policy term, usually at a lower premium than other life policies.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "57",
+    "category": "Insurance - Life Insurance",
+    "question": "What is the difference between term insurance and whole life insurance?",
+    "answer": "Term insurance covers a specific period and pays out only on death within that term, while whole life insurance covers you for your entire life and may include a savings/investment component.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "57",
+    "category": "Insurance - Life Insurance",
+    "question": "Term insurance vs whole life insurance",
+    "answer": " what's the difference?",
+    "is_original": "Term insurance covers a specific period and pays out only on death within that term, while whole life insurance covers you for your entire life and may include a savings/investment component.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "57",
+    "category": "Insurance - Life Insurance",
+    "question": "Should I get term or whole life insurance?",
+    "answer": "Term insurance covers a specific period and pays out only on death within that term, while whole life insurance covers you for your entire life and may include a savings/investment component.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "57",
+    "category": "Insurance - Life Insurance",
+    "question": "How is whole life insurance different from term plans?",
+    "answer": "Term insurance covers a specific period and pays out only on death within that term, while whole life insurance covers you for your entire life and may include a savings/investment component.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "58",
+    "category": "Insurance - Life Insurance",
+    "question": "How do I choose the right sum assured for term insurance?",
+    "answer": "A common approach is to choose a sum assured of 10-15 times your annual income, factoring in your liabilities, dependents, and future financial goals.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "58",
+    "category": "Insurance - Life Insurance",
+    "question": "How much life cover should I buy?",
+    "answer": "A common approach is to choose a sum assured of 10-15 times your annual income, factoring in your liabilities, dependents, and future financial goals.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "58",
+    "category": "Insurance - Life Insurance",
+    "question": "What sum assured is ideal for my term plan?",
+    "answer": "A common approach is to choose a sum assured of 10-15 times your annual income, factoring in your liabilities, dependents, and future financial goals.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "58",
+    "category": "Insurance - Life Insurance",
+    "question": "How do I decide on my term insurance coverage amount?",
+    "answer": "A common approach is to choose a sum assured of 10-15 times your annual income, factoring in your liabilities, dependents, and future financial goals.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "59",
+    "category": "Insurance - Life Insurance",
+    "question": "What happens if I miss a premium payment?",
+    "answer": "Most policies offer a grace period to pay overdue premiums; if unpaid beyond that, the policy may lapse, though some plans allow reinstatement within a certain period.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "59",
+    "category": "Insurance - Life Insurance",
+    "question": "I missed my premium due date",
+    "answer": " what now?",
+    "is_original": "Most policies offer a grace period to pay overdue premiums; if unpaid beyond that, the policy may lapse, though some plans allow reinstatement within a certain period.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "59",
+    "category": "Insurance - Life Insurance",
+    "question": "Will my policy lapse if I skip a payment?",
+    "answer": "Most policies offer a grace period to pay overdue premiums; if unpaid beyond that, the policy may lapse, though some plans allow reinstatement within a certain period.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "59",
+    "category": "Insurance - Life Insurance",
+    "question": "Can I still pay a late insurance premium?",
+    "answer": "Most policies offer a grace period to pay overdue premiums; if unpaid beyond that, the policy may lapse, though some plans allow reinstatement within a certain period.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "60",
+    "category": "Insurance - Life Insurance",
+    "question": "Can I get a tax benefit on life insurance premiums?",
+    "answer": "Many countries offer tax deductions on life insurance premiums under specific tax provisions; please check current tax laws or consult a tax advisor for details applicable to you.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "60",
+    "category": "Insurance - Life Insurance",
+    "question": "Are life insurance premiums tax deductible?",
+    "answer": "Many countries offer tax deductions on life insurance premiums under specific tax provisions; please check current tax laws or consult a tax advisor for details applicable to you.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "60",
+    "category": "Insurance - Life Insurance",
+    "question": "Does buying life insurance save me tax?",
+    "answer": "Many countries offer tax deductions on life insurance premiums under specific tax provisions; please check current tax laws or consult a tax advisor for details applicable to you.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "60",
+    "category": "Insurance - Life Insurance",
+    "question": "What tax benefits come with a life insurance policy?",
+    "answer": "Many countries offer tax deductions on life insurance premiums under specific tax provisions; please check current tax laws or consult a tax advisor for details applicable to you.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "61",
+    "category": "Insurance - Health Insurance",
+    "question": "What is health insurance?",
+    "answer": "Health insurance covers medical expenses such as hospitalization, surgery, and treatment costs, reducing your out-of-pocket healthcare spending.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "61",
+    "category": "Insurance - Health Insurance",
+    "question": "Can you explain what health insurance covers?",
+    "answer": "Health insurance covers medical expenses such as hospitalization, surgery, and treatment costs, reducing your out-of-pocket healthcare spending.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "61",
+    "category": "Insurance - Health Insurance",
+    "question": "What is a mediclaim policy?",
+    "answer": "Health insurance covers medical expenses such as hospitalization, surgery, and treatment costs, reducing your out-of-pocket healthcare spending.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "61",
+    "category": "Insurance - Health Insurance",
+    "question": "How does health insurance help with hospital bills?",
+    "answer": "Health insurance covers medical expenses such as hospitalization, surgery, and treatment costs, reducing your out-of-pocket healthcare spending.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "62",
+    "category": "Insurance - Health Insurance",
+    "question": "What is a cashless claim in health insurance?",
+    "answer": "A cashless claim allows you to receive treatment at a network hospital without paying upfront; the insurer settles the bill directly with the hospital.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "62",
+    "category": "Insurance - Health Insurance",
+    "question": "How does cashless hospitalization work?",
+    "answer": "A cashless claim allows you to receive treatment at a network hospital without paying upfront; the insurer settles the bill directly with the hospital.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "62",
+    "category": "Insurance - Health Insurance",
+    "question": "Can I get treated without paying upfront using insurance?",
+    "answer": "A cashless claim allows you to receive treatment at a network hospital without paying upfront; the insurer settles the bill directly with the hospital.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "62",
+    "category": "Insurance - Health Insurance",
+    "question": "What does 'cashless treatment' mean in health policies?",
+    "answer": "A cashless claim allows you to receive treatment at a network hospital without paying upfront; the insurer settles the bill directly with the hospital.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "63",
+    "category": "Insurance - Health Insurance",
+    "question": "What is a pre-existing disease waiting period?",
+    "answer": "It's a specified period (often 2-4 years) during which claims related to pre-existing medical conditions are not covered by a new health policy.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "63",
+    "category": "Insurance - Health Insurance",
+    "question": "How long is the waiting period for pre-existing conditions?",
+    "answer": "It's a specified period (often 2-4 years) during which claims related to pre-existing medical conditions are not covered by a new health policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "63",
+    "category": "Insurance - Health Insurance",
+    "question": "I have diabetes",
+    "answer": " when will my policy cover it?",
+    "is_original": "It's a specified period (often 2-4 years) during which claims related to pre-existing medical conditions are not covered by a new health policy.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "63",
+    "category": "Insurance - Health Insurance",
+    "question": "Does health insurance cover existing illnesses right away?",
+    "answer": "It's a specified period (often 2-4 years) during which claims related to pre-existing medical conditions are not covered by a new health policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "64",
+    "category": "Insurance - Health Insurance",
+    "question": "Does health insurance cover pre- and post-hospitalization expenses?",
+    "answer": "Yes, most health policies cover medical expenses incurred a certain number of days before and after hospitalization, subject to policy terms.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "64",
+    "category": "Insurance - Health Insurance",
+    "question": "Are expenses before and after hospital admission covered?",
+    "answer": "Yes, most health policies cover medical expenses incurred a certain number of days before and after hospitalization, subject to policy terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "64",
+    "category": "Insurance - Health Insurance",
+    "question": "Does my policy pay for follow-up treatment after discharge?",
+    "answer": "Yes, most health policies cover medical expenses incurred a certain number of days before and after hospitalization, subject to policy terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "64",
+    "category": "Insurance - Health Insurance",
+    "question": "What about medical costs before I'm admitted to hospital?",
+    "answer": "Yes, most health policies cover medical expenses incurred a certain number of days before and after hospitalization, subject to policy terms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "65",
+    "category": "Insurance - Health Insurance",
+    "question": "What is a co-payment in health insurance?",
+    "answer": "Co-payment is a fixed percentage of the claim amount that the policyholder must pay out of pocket, with the insurer covering the rest.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "65",
+    "category": "Insurance - Health Insurance",
+    "question": "What does co-pay mean in my health policy?",
+    "answer": "Co-payment is a fixed percentage of the claim amount that the policyholder must pay out of pocket, with the insurer covering the rest.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "65",
+    "category": "Insurance - Health Insurance",
+    "question": "Do I have to pay part of the claim myself?",
+    "answer": "Co-payment is a fixed percentage of the claim amount that the policyholder must pay out of pocket, with the insurer covering the rest.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "65",
+    "category": "Insurance - Health Insurance",
+    "question": "How does co-payment affect my claim settlement?",
+    "answer": "Co-payment is a fixed percentage of the claim amount that the policyholder must pay out of pocket, with the insurer covering the rest.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "66",
+    "category": "Insurance - Health Insurance",
+    "question": "Can I add family members to my health insurance policy?",
+    "answer": "Yes, family floater health plans allow you to cover your spouse, children, and sometimes parents under a single policy with a shared sum insured.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "66",
+    "category": "Insurance - Health Insurance",
+    "question": "Can my whole family be on one health insurance plan?",
+    "answer": "Yes, family floater health plans allow you to cover your spouse, children, and sometimes parents under a single policy with a shared sum insured.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "66",
+    "category": "Insurance - Health Insurance",
+    "question": "What is a family floater policy?",
+    "answer": "Yes, family floater health plans allow you to cover your spouse, children, and sometimes parents under a single policy with a shared sum insured.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "66",
+    "category": "Insurance - Health Insurance",
+    "question": "Can I include my parents in my health cover?",
+    "answer": "Yes, family floater health plans allow you to cover your spouse, children, and sometimes parents under a single policy with a shared sum insured.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "67",
+    "category": "Insurance - Health Insurance",
+    "question": "What is not covered under a standard health insurance policy?",
+    "answer": "Common exclusions include cosmetic treatments, self-inflicted injuries, certain pre-existing conditions during the waiting period, and non-medical expenses; check your policy document for full exclusions.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "67",
+    "category": "Insurance - Health Insurance",
+    "question": "What are the exclusions in my health policy?",
+    "answer": "Common exclusions include cosmetic treatments, self-inflicted injuries, certain pre-existing conditions during the waiting period, and non-medical expenses; check your policy document for full exclusions.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "67",
+    "category": "Insurance - Health Insurance",
+    "question": "What things does health insurance not pay for?",
+    "answer": "Common exclusions include cosmetic treatments, self-inflicted injuries, certain pre-existing conditions during the waiting period, and non-medical expenses; check your policy document for full exclusions.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "67",
+    "category": "Insurance - Health Insurance",
+    "question": "Is cosmetic surgery covered by health insurance?",
+    "answer": "Common exclusions include cosmetic treatments, self-inflicted injuries, certain pre-existing conditions during the waiting period, and non-medical expenses; check your policy document for full exclusions.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "68",
+    "category": "Insurance - Motor Insurance",
+    "question": "What is motor insurance?",
+    "answer": "Motor insurance provides financial protection against damages to your vehicle and third-party liabilities arising from accidents, theft, or natural calamities.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "68",
+    "category": "Insurance - Motor Insurance",
+    "question": "Can you explain what car/vehicle insurance covers?",
+    "answer": "Motor insurance provides financial protection against damages to your vehicle and third-party liabilities arising from accidents, theft, or natural calamities.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "68",
+    "category": "Insurance - Motor Insurance",
+    "question": "What does auto insurance protect me from?",
+    "answer": "Motor insurance provides financial protection against damages to your vehicle and third-party liabilities arising from accidents, theft, or natural calamities.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "68",
+    "category": "Insurance - Motor Insurance",
+    "question": "Why do I need vehicle insurance?",
+    "answer": "Motor insurance provides financial protection against damages to your vehicle and third-party liabilities arising from accidents, theft, or natural calamities.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "69",
+    "category": "Insurance - Motor Insurance",
+    "question": "What is the difference between third-party and comprehensive motor insurance?",
+    "answer": "Third-party insurance only covers damages/injuries to a third party, while comprehensive insurance also covers damage to your own vehicle and additional risks like theft or fire.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "69",
+    "category": "Insurance - Motor Insurance",
+    "question": "Third-party vs comprehensive car insurance",
+    "answer": " which is better?",
+    "is_original": "Third-party insurance only covers damages/injuries to a third party, while comprehensive insurance also covers damage to your own vehicle and additional risks like theft or fire.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "69",
+    "category": "Insurance - Motor Insurance",
+    "question": "What does comprehensive car insurance include that third-party doesn't?",
+    "answer": "Third-party insurance only covers damages/injuries to a third party, while comprehensive insurance also covers damage to your own vehicle and additional risks like theft or fire.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "69",
+    "category": "Insurance - Motor Insurance",
+    "question": "Should I buy third-party or full coverage insurance?",
+    "answer": "Third-party insurance only covers damages/injuries to a third party, while comprehensive insurance also covers damage to your own vehicle and additional risks like theft or fire.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "70",
+    "category": "Insurance - Motor Insurance",
+    "question": "Is motor insurance mandatory?",
+    "answer": "Yes, in most countries, at least third-party motor insurance is legally mandatory for all vehicle owners.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "70",
+    "category": "Insurance - Motor Insurance",
+    "question": "Do I legally need car insurance?",
+    "answer": "Yes, in most countries, at least third-party motor insurance is legally mandatory for all vehicle owners.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "70",
+    "category": "Insurance - Motor Insurance",
+    "question": "Is it compulsory to insure my vehicle?",
+    "answer": "Yes, in most countries, at least third-party motor insurance is legally mandatory for all vehicle owners.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "70",
+    "category": "Insurance - Motor Insurance",
+    "question": "Can I drive without insurance?",
+    "answer": "Yes, in most countries, at least third-party motor insurance is legally mandatory for all vehicle owners.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "71",
+    "category": "Insurance - Motor Insurance",
+    "question": "What is a No Claim Bonus (NCB)?",
+    "answer": "NCB is a discount on your premium offered for each claim-free year, which can accumulate over time and reduce renewal premiums significantly.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "71",
+    "category": "Insurance - Motor Insurance",
+    "question": "What does No Claim Bonus mean?",
+    "answer": "NCB is a discount on your premium offered for each claim-free year, which can accumulate over time and reduce renewal premiums significantly.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "71",
+    "category": "Insurance - Motor Insurance",
+    "question": "How do I earn a discount for not filing claims?",
+    "answer": "NCB is a discount on your premium offered for each claim-free year, which can accumulate over time and reduce renewal premiums significantly.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "71",
+    "category": "Insurance - Motor Insurance",
+    "question": "Does NCB reduce my premium at renewal?",
+    "answer": "NCB is a discount on your premium offered for each claim-free year, which can accumulate over time and reduce renewal premiums significantly.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "72",
+    "category": "Insurance - Motor Insurance",
+    "question": "How do I renew my motor insurance policy?",
+    "answer": "You can renew your motor insurance online through the insurer's website or app, or through an agent, before the policy expiry date to avoid a lapse in coverage.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "72",
+    "category": "Insurance - Motor Insurance",
+    "question": "What's the process to renew my car insurance?",
+    "answer": "You can renew your motor insurance online through the insurer's website or app, or through an agent, before the policy expiry date to avoid a lapse in coverage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "72",
+    "category": "Insurance - Motor Insurance",
+    "question": "How can I renew my vehicle policy online?",
+    "answer": "You can renew your motor insurance online through the insurer's website or app, or through an agent, before the policy expiry date to avoid a lapse in coverage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "72",
+    "category": "Insurance - Motor Insurance",
+    "question": "My car insurance is expiring",
+    "answer": " how do I renew it?",
+    "is_original": "You can renew your motor insurance online through the insurer's website or app, or through an agent, before the policy expiry date to avoid a lapse in coverage.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "73",
+    "category": "Insurance - Motor Insurance",
+    "question": "What should I do immediately after a car accident to file a claim?",
+    "answer": "Ensure safety first, then take photos of the damage, note down details of the other party if involved, file a police report if required, and inform your insurer promptly to initiate the claim.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "73",
+    "category": "Insurance - Motor Insurance",
+    "question": "I had an accident",
+    "answer": " what are the first steps for a claim?",
+    "is_original": "Ensure safety first, then take photos of the damage, note down details of the other party if involved, file a police report if required, and inform your insurer promptly to initiate the claim.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "73",
+    "category": "Insurance - Motor Insurance",
+    "question": "What do I do right after a car crash to make an insurance claim?",
+    "answer": "Ensure safety first, then take photos of the damage, note down details of the other party if involved, file a police report if required, and inform your insurer promptly to initiate the claim.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "73",
+    "category": "Insurance - Motor Insurance",
+    "question": "How do I start a motor insurance claim after an accident?",
+    "answer": "Ensure safety first, then take photos of the damage, note down details of the other party if involved, file a police report if required, and inform your insurer promptly to initiate the claim.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "74",
+    "category": "Insurance - Home Insurance",
+    "question": "What does home insurance cover?",
+    "answer": "Home insurance typically covers damage to the structure and contents of your home due to fire, theft, natural disasters, and sometimes liability for injuries occurring on your property.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "74",
+    "category": "Insurance - Home Insurance",
+    "question": "What's included in a homeowner's insurance policy?",
+    "answer": "Home insurance typically covers damage to the structure and contents of your home due to fire, theft, natural disasters, and sometimes liability for injuries occurring on your property.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "74",
+    "category": "Insurance - Home Insurance",
+    "question": "Does house insurance cover fire and theft?",
+    "answer": "Home insurance typically covers damage to the structure and contents of your home due to fire, theft, natural disasters, and sometimes liability for injuries occurring on your property.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "74",
+    "category": "Insurance - Home Insurance",
+    "question": "What kind of protection does home insurance offer?",
+    "answer": "Home insurance typically covers damage to the structure and contents of your home due to fire, theft, natural disasters, and sometimes liability for injuries occurring on your property.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "75",
+    "category": "Insurance - Home Insurance",
+    "question": "Is home insurance mandatory?",
+    "answer": "Home insurance is generally not legally mandatory, but it may be required by lenders if you have a home loan, and it's highly recommended for financial protection.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "75",
+    "category": "Insurance - Home Insurance",
+    "question": "Do I have to buy home insurance?",
+    "answer": "Home insurance is generally not legally mandatory, but it may be required by lenders if you have a home loan, and it's highly recommended for financial protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "75",
+    "category": "Insurance - Home Insurance",
+    "question": "Is house insurance legally required?",
+    "answer": "Home insurance is generally not legally mandatory, but it may be required by lenders if you have a home loan, and it's highly recommended for financial protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "75",
+    "category": "Insurance - Home Insurance",
+    "question": "Will my bank require home insurance for a home loan?",
+    "answer": "Home insurance is generally not legally mandatory, but it may be required by lenders if you have a home loan, and it's highly recommended for financial protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "76",
+    "category": "Insurance - Travel Insurance",
+    "question": "What does travel insurance cover?",
+    "answer": "Travel insurance typically covers trip cancellations, medical emergencies abroad, lost baggage, flight delays, and other travel-related risks.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "76",
+    "category": "Insurance - Travel Insurance",
+    "question": "What's included in a travel insurance plan?",
+    "answer": "Travel insurance typically covers trip cancellations, medical emergencies abroad, lost baggage, flight delays, and other travel-related risks.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "76",
+    "category": "Insurance - Travel Insurance",
+    "question": "Does travel insurance cover lost luggage?",
+    "answer": "Travel insurance typically covers trip cancellations, medical emergencies abroad, lost baggage, flight delays, and other travel-related risks.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "76",
+    "category": "Insurance - Travel Insurance",
+    "question": "Will travel insurance help if I get sick abroad?",
+    "answer": "Travel insurance typically covers trip cancellations, medical emergencies abroad, lost baggage, flight delays, and other travel-related risks.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "77",
+    "category": "Insurance - Travel Insurance",
+    "question": "Do I need travel insurance for domestic trips?",
+    "answer": "While not usually mandatory, domestic travel insurance can still cover trip cancellations, medical emergencies, and baggage loss, offering useful protection.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "77",
+    "category": "Insurance - Travel Insurance",
+    "question": "Should I get travel insurance for a trip within my own country?",
+    "answer": "While not usually mandatory, domestic travel insurance can still cover trip cancellations, medical emergencies, and baggage loss, offering useful protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "77",
+    "category": "Insurance - Travel Insurance",
+    "question": "Is travel insurance necessary for local travel?",
+    "answer": "While not usually mandatory, domestic travel insurance can still cover trip cancellations, medical emergencies, and baggage loss, offering useful protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "77",
+    "category": "Insurance - Travel Insurance",
+    "question": "Does domestic travel need insurance too?",
+    "answer": "While not usually mandatory, domestic travel insurance can still cover trip cancellations, medical emergencies, and baggage loss, offering useful protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "78",
+    "category": "Insurance - Claims",
+    "question": "How do I file an insurance claim?",
+    "answer": "You can file a claim online through the insurer's app or website, by calling customer support, or through your agent, along with the required documents like bills, reports, and forms.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "78",
+    "category": "Insurance - Claims",
+    "question": "What's the process to raise an insurance claim?",
+    "answer": "You can file a claim online through the insurer's app or website, by calling customer support, or through your agent, along with the required documents like bills, reports, and forms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "78",
+    "category": "Insurance - Claims",
+    "question": "How do I submit a claim to my insurer?",
+    "answer": "You can file a claim online through the insurer's app or website, by calling customer support, or through your agent, along with the required documents like bills, reports, and forms.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "78",
+    "category": "Insurance - Claims",
+    "question": "I need to make an insurance claim",
+    "answer": " where do I start?",
+    "is_original": "You can file a claim online through the insurer's app or website, by calling customer support, or through your agent, along with the required documents like bills, reports, and forms.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "79",
+    "category": "Insurance - Claims",
+    "question": "What documents are needed to file a health insurance claim?",
+    "answer": "Typically required: claim form, hospital bills, discharge summary, diagnostic reports, and ID proof; cashless claims may need pre-authorization forms instead.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "79",
+    "category": "Insurance - Claims",
+    "question": "What paperwork is required for a medical claim?",
+    "answer": "Typically required: claim form, hospital bills, discharge summary, diagnostic reports, and ID proof; cashless claims may need pre-authorization forms instead.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "79",
+    "category": "Insurance - Claims",
+    "question": "Which documents should I submit for a hospital claim?",
+    "answer": "Typically required: claim form, hospital bills, discharge summary, diagnostic reports, and ID proof; cashless claims may need pre-authorization forms instead.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "79",
+    "category": "Insurance - Claims",
+    "question": "Do I need discharge summary for health insurance claim?",
+    "answer": "Typically required: claim form, hospital bills, discharge summary, diagnostic reports, and ID proof; cashless claims may need pre-authorization forms instead.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "80",
+    "category": "Insurance - Claims",
+    "question": "How long does it take for an insurance claim to be settled?",
+    "answer": "Claim settlement times vary by insurer and claim type, ranging from a few days for cashless claims to a few weeks for reimbursement claims, depending on documentation completeness.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "80",
+    "category": "Insurance - Claims",
+    "question": "When will I receive my claim payout?",
+    "answer": "Claim settlement times vary by insurer and claim type, ranging from a few days for cashless claims to a few weeks for reimbursement claims, depending on documentation completeness.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "80",
+    "category": "Insurance - Claims",
+    "question": "How many days does claim settlement usually take?",
+    "answer": "Claim settlement times vary by insurer and claim type, ranging from a few days for cashless claims to a few weeks for reimbursement claims, depending on documentation completeness.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "80",
+    "category": "Insurance - Claims",
+    "question": "Is claim processing fast or slow?",
+    "answer": "Claim settlement times vary by insurer and claim type, ranging from a few days for cashless claims to a few weeks for reimbursement claims, depending on documentation completeness.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "81",
+    "category": "Insurance - Claims",
+    "question": "Why was my insurance claim rejected?",
+    "answer": "Claims can be rejected due to policy exclusions, incomplete documentation, non-disclosure of information, or the claim falling outside the coverage terms; you can request a detailed reason from the insurer.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "81",
+    "category": "Insurance - Claims",
+    "question": "My claim got denied",
+    "answer": " why?",
+    "is_original": "Claims can be rejected due to policy exclusions, incomplete documentation, non-disclosure of information, or the claim falling outside the coverage terms; you can request a detailed reason from the insurer.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "81",
+    "category": "Insurance - Claims",
+    "question": "What are common reasons for claim rejection?",
+    "answer": "Claims can be rejected due to policy exclusions, incomplete documentation, non-disclosure of information, or the claim falling outside the coverage terms; you can request a detailed reason from the insurer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "81",
+    "category": "Insurance - Claims",
+    "question": "Why didn't my insurer approve my claim?",
+    "answer": "Claims can be rejected due to policy exclusions, incomplete documentation, non-disclosure of information, or the claim falling outside the coverage terms; you can request a detailed reason from the insurer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "82",
+    "category": "Insurance - Claims",
+    "question": "Can I appeal a rejected insurance claim?",
+    "answer": "Yes, you can request a review or escalate the matter to the insurer's grievance cell, and if unresolved, approach the insurance ombudsman or regulatory authority.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "82",
+    "category": "Insurance - Claims",
+    "question": "How do I challenge a denied claim?",
+    "answer": "Yes, you can request a review or escalate the matter to the insurer's grievance cell, and if unresolved, approach the insurance ombudsman or regulatory authority.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "82",
+    "category": "Insurance - Claims",
+    "question": "What can I do if my claim rejection is unfair?",
+    "answer": "Yes, you can request a review or escalate the matter to the insurer's grievance cell, and if unresolved, approach the insurance ombudsman or regulatory authority.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "82",
+    "category": "Insurance - Claims",
+    "question": "Is there a way to escalate a rejected claim?",
+    "answer": "Yes, you can request a review or escalate the matter to the insurer's grievance cell, and if unresolved, approach the insurance ombudsman or regulatory authority.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "83",
+    "category": "Insurance - Policy Management",
+    "question": "How do I renew my insurance policy?",
+    "answer": "You can renew your policy online via the insurer's website or app, through an agent, or by visiting a branch, before the due date to maintain continuous coverage.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "83",
+    "category": "Insurance - Policy Management",
+    "question": "What's the process for policy renewal?",
+    "answer": "You can renew your policy online via the insurer's website or app, through an agent, or by visiting a branch, before the due date to maintain continuous coverage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "83",
+    "category": "Insurance - Policy Management",
+    "question": "How can I renew my insurance before it expires?",
+    "answer": "You can renew your policy online via the insurer's website or app, through an agent, or by visiting a branch, before the due date to maintain continuous coverage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "83",
+    "category": "Insurance - Policy Management",
+    "question": "Where do I go to renew my insurance plan?",
+    "answer": "You can renew your policy online via the insurer's website or app, through an agent, or by visiting a branch, before the due date to maintain continuous coverage.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "84",
+    "category": "Insurance - Policy Management",
+    "question": "What happens if my policy lapses?",
+    "answer": "A lapsed policy loses its coverage benefits; some insurers allow reinstatement within a specified period by paying overdue premiums and, in some cases, providing a health declaration.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "84",
+    "category": "Insurance - Policy Management",
+    "question": "My policy expired without renewal",
+    "answer": " what now?",
+    "is_original": "A lapsed policy loses its coverage benefits; some insurers allow reinstatement within a specified period by paying overdue premiums and, in some cases, providing a health declaration.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "84",
+    "category": "Insurance - Policy Management",
+    "question": "Can I reactivate a lapsed insurance policy?",
+    "answer": "A lapsed policy loses its coverage benefits; some insurers allow reinstatement within a specified period by paying overdue premiums and, in some cases, providing a health declaration.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "84",
+    "category": "Insurance - Policy Management",
+    "question": "Does a lapsed policy still cover me?",
+    "answer": "A lapsed policy loses its coverage benefits; some insurers allow reinstatement within a specified period by paying overdue premiums and, in some cases, providing a health declaration.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "85",
+    "category": "Insurance - Policy Management",
+    "question": "How do I update my nominee details in an insurance policy?",
+    "answer": "You can update nominee details through the insurer's website, app, or by submitting a nomination change form at a branch or to your agent.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "85",
+    "category": "Insurance - Policy Management",
+    "question": "How can I change the beneficiary on my policy?",
+    "answer": "You can update nominee details through the insurer's website, app, or by submitting a nomination change form at a branch or to your agent.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "85",
+    "category": "Insurance - Policy Management",
+    "question": "I want to update my nominee information",
+    "answer": " how?",
+    "is_original": "You can update nominee details through the insurer's website, app, or by submitting a nomination change form at a branch or to your agent.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "85",
+    "category": "Insurance - Policy Management",
+    "question": "Can I change who receives my insurance payout?",
+    "answer": "You can update nominee details through the insurer's website, app, or by submitting a nomination change form at a branch or to your agent.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "86",
+    "category": "Insurance - Policy Management",
+    "question": "Can I change my insurance plan or coverage after purchase?",
+    "answer": "Some changes, like increasing the sum insured or adding riders, may be possible at renewal, subject to underwriting; switching plans entirely usually requires a new policy.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "86",
+    "category": "Insurance - Policy Management",
+    "question": "Can I upgrade my insurance coverage later?",
+    "answer": "Some changes, like increasing the sum insured or adding riders, may be possible at renewal, subject to underwriting; switching plans entirely usually requires a new policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "86",
+    "category": "Insurance - Policy Management",
+    "question": "Is it possible to modify my existing policy?",
+    "answer": "Some changes, like increasing the sum insured or adding riders, may be possible at renewal, subject to underwriting; switching plans entirely usually requires a new policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "86",
+    "category": "Insurance - Policy Management",
+    "question": "Can I switch to a different insurance plan?",
+    "answer": "Some changes, like increasing the sum insured or adding riders, may be possible at renewal, subject to underwriting; switching plans entirely usually requires a new policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "87",
+    "category": "Insurance - Policy Management",
+    "question": "How can I check my insurance policy status?",
+    "answer": "You can check your policy status through the insurer's mobile app, website portal, or by contacting customer service with your policy number.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "87",
+    "category": "Insurance - Policy Management",
+    "question": "Where can I see if my policy is active?",
+    "answer": "You can check your policy status through the insurer's mobile app, website portal, or by contacting customer service with your policy number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "87",
+    "category": "Insurance - Policy Management",
+    "question": "How do I check the status of my insurance plan?",
+    "answer": "You can check your policy status through the insurer's mobile app, website portal, or by contacting customer service with your policy number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "87",
+    "category": "Insurance - Policy Management",
+    "question": "Is my insurance policy currently active?",
+    "answer": "You can check your policy status through the insurer's mobile app, website portal, or by contacting customer service with your policy number.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "88",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What is a rider in insurance?",
+    "answer": "A rider is an optional add-on to your base insurance policy that provides extra coverage, such as critical illness, accidental death, or waiver of premium, for an additional cost.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "88",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What does 'rider' mean in an insurance policy?",
+    "answer": "A rider is an optional add-on to your base insurance policy that provides extra coverage, such as critical illness, accidental death, or waiver of premium, for an additional cost.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "88",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What are add-ons in insurance plans?",
+    "answer": "A rider is an optional add-on to your base insurance policy that provides extra coverage, such as critical illness, accidental death, or waiver of premium, for an additional cost.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "88",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "Can I add extra coverage to my base policy?",
+    "answer": "A rider is an optional add-on to your base insurance policy that provides extra coverage, such as critical illness, accidental death, or waiver of premium, for an additional cost.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "89",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What is a critical illness rider?",
+    "answer": "A critical illness rider provides a lump sum payout upon diagnosis of specified serious illnesses like cancer or heart attack, in addition to your base policy benefits.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "89",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What does critical illness cover mean?",
+    "answer": "A critical illness rider provides a lump sum payout upon diagnosis of specified serious illnesses like cancer or heart attack, in addition to your base policy benefits.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "89",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "Does my policy pay out if I'm diagnosed with cancer?",
+    "answer": "A critical illness rider provides a lump sum payout upon diagnosis of specified serious illnesses like cancer or heart attack, in addition to your base policy benefits.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "89",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "How does a critical illness add-on work?",
+    "answer": "A critical illness rider provides a lump sum payout upon diagnosis of specified serious illnesses like cancer or heart attack, in addition to your base policy benefits.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "90",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What is a personal accident rider?",
+    "answer": "A personal accident rider provides additional financial coverage in case of accidental death or disability, supplementing your base life or health policy.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "90",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "What does accident cover add to my policy?",
+    "answer": "A personal accident rider provides additional financial coverage in case of accidental death or disability, supplementing your base life or health policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "90",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "Does my policy cover accidental disability?",
+    "answer": "A personal accident rider provides additional financial coverage in case of accidental death or disability, supplementing your base life or health policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "90",
+    "category": "Insurance - Riders/Add-ons",
+    "question": "Explain the personal accident add-on",
+    "answer": "A personal accident rider provides additional financial coverage in case of accidental death or disability, supplementing your base life or health policy.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "91",
+    "category": "Insurance - Payments",
+    "question": "What are the different ways to pay my insurance premium?",
+    "answer": "Premiums can typically be paid online via net banking, debit/credit card, UPI, auto-debit, or offline through cheque, cash at a branch, or via an agent.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "91",
+    "category": "Insurance - Payments",
+    "question": "How can I pay my insurance premium?",
+    "answer": "Premiums can typically be paid online via net banking, debit/credit card, UPI, auto-debit, or offline through cheque, cash at a branch, or via an agent.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "91",
+    "category": "Insurance - Payments",
+    "question": "What payment methods do you accept for premiums?",
+    "answer": "Premiums can typically be paid online via net banking, debit/credit card, UPI, auto-debit, or offline through cheque, cash at a branch, or via an agent.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "91",
+    "category": "Insurance - Payments",
+    "question": "Can I pay my premium using UPI?",
+    "answer": "Premiums can typically be paid online via net banking, debit/credit card, UPI, auto-debit, or offline through cheque, cash at a branch, or via an agent.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "92",
+    "category": "Insurance - Payments",
+    "question": "Can I set up auto-debit for premium payments?",
+    "answer": "Yes, you can set up auto-debit through your bank's ECS/standing instruction facility or through the insurer's app for hassle-free premium payments.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "92",
+    "category": "Insurance - Payments",
+    "question": "How do I automate my premium payments?",
+    "answer": "Yes, you can set up auto-debit through your bank's ECS/standing instruction facility or through the insurer's app for hassle-free premium payments.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "92",
+    "category": "Insurance - Payments",
+    "question": "Can my premium be deducted automatically each month?",
+    "answer": "Yes, you can set up auto-debit through your bank's ECS/standing instruction facility or through the insurer's app for hassle-free premium payments.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "92",
+    "category": "Insurance - Payments",
+    "question": "Is there an auto-pay option for insurance premiums?",
+    "answer": "Yes, you can set up auto-debit through your bank's ECS/standing instruction facility or through the insurer's app for hassle-free premium payments.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "93",
+    "category": "Insurance - Payments",
+    "question": "What is the grace period for premium payment?",
+    "answer": "The grace period is typically 15-30 days after the due date during which you can pay the premium without losing coverage, though this varies by insurer and policy type.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "93",
+    "category": "Insurance - Payments",
+    "question": "How many days do I get to pay a late premium?",
+    "answer": "The grace period is typically 15-30 days after the due date during which you can pay the premium without losing coverage, though this varies by insurer and policy type.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "93",
+    "category": "Insurance - Payments",
+    "question": "What's the grace period before my policy lapses?",
+    "answer": "The grace period is typically 15-30 days after the due date during which you can pay the premium without losing coverage, though this varies by insurer and policy type.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "93",
+    "category": "Insurance - Payments",
+    "question": "How long can I delay my premium payment?",
+    "answer": "The grace period is typically 15-30 days after the due date during which you can pay the premium without losing coverage, though this varies by insurer and policy type.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "94",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "Can I cancel my insurance policy?",
+    "answer": "Yes, most policies can be cancelled, and depending on the free-look period and policy terms, you may be eligible for a partial or full refund of premiums paid.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "94",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "How do I cancel my insurance plan?",
+    "answer": "Yes, most policies can be cancelled, and depending on the free-look period and policy terms, you may be eligible for a partial or full refund of premiums paid.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "94",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "Can I get a refund if I cancel my policy?",
+    "answer": "Yes, most policies can be cancelled, and depending on the free-look period and policy terms, you may be eligible for a partial or full refund of premiums paid.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "94",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "I want to discontinue my insurance",
+    "answer": " is that possible?",
+    "is_original": "Yes, most policies can be cancelled, and depending on the free-look period and policy terms, you may be eligible for a partial or full refund of premiums paid.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "95",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "What is the free-look period in insurance?",
+    "answer": "The free-look period is a window (commonly 15-30 days) after policy issuance during which you can review the terms and cancel the policy for a refund if not satisfied.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "95",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "What does free-look period mean?",
+    "answer": "The free-look period is a window (commonly 15-30 days) after policy issuance during which you can review the terms and cancel the policy for a refund if not satisfied.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "95",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "How many days do I have to review my new policy?",
+    "answer": "The free-look period is a window (commonly 15-30 days) after policy issuance during which you can review the terms and cancel the policy for a refund if not satisfied.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "95",
+    "category": "Insurance - Refunds/Cancellation",
+    "question": "Can I cancel my policy right after buying it for a refund?",
+    "answer": "The free-look period is a window (commonly 15-30 days) after policy issuance during which you can review the terms and cancel the policy for a refund if not satisfied.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "96",
+    "category": "Insurance - Regulatory",
+    "question": "Who regulates insurance companies?",
+    "answer": "Insurance companies are regulated by the respective national insurance regulatory authority, which sets rules for policy terms, solvency, and consumer protection.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "96",
+    "category": "Insurance - Regulatory",
+    "question": "Which authority oversees insurance providers?",
+    "answer": "Insurance companies are regulated by the respective national insurance regulatory authority, which sets rules for policy terms, solvency, and consumer protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "96",
+    "category": "Insurance - Regulatory",
+    "question": "Is there a government body that regulates insurers?",
+    "answer": "Insurance companies are regulated by the respective national insurance regulatory authority, which sets rules for policy terms, solvency, and consumer protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "96",
+    "category": "Insurance - Regulatory",
+    "question": "Who makes sure insurance companies follow the rules?",
+    "answer": "Insurance companies are regulated by the respective national insurance regulatory authority, which sets rules for policy terms, solvency, and consumer protection.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "97",
+    "category": "Insurance - Regulatory",
+    "question": "What is an insurance ombudsman?",
+    "answer": "An insurance ombudsman is an independent authority that helps resolve disputes between policyholders and insurers when a complaint isn't resolved satisfactorily by the insurer.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "97",
+    "category": "Insurance - Regulatory",
+    "question": "What does the insurance ombudsman do?",
+    "answer": "An insurance ombudsman is an independent authority that helps resolve disputes between policyholders and insurers when a complaint isn't resolved satisfactorily by the insurer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "97",
+    "category": "Insurance - Regulatory",
+    "question": "Who can I approach if my insurer doesn't resolve my complaint?",
+    "answer": "An insurance ombudsman is an independent authority that helps resolve disputes between policyholders and insurers when a complaint isn't resolved satisfactorily by the insurer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "97",
+    "category": "Insurance - Regulatory",
+    "question": "Is there an independent body for insurance disputes?",
+    "answer": "An insurance ombudsman is an independent authority that helps resolve disputes between policyholders and insurers when a complaint isn't resolved satisfactorily by the insurer.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "98",
+    "category": "General - AI Chatbot",
+    "question": "Can I get personalized financial advice from this chatbot?",
+    "answer": "This chatbot provides general information about banking and insurance products; for personalized advice, please consult a bank representative or licensed financial/insurance advisor.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "98",
+    "category": "General - AI Chatbot",
+    "question": "Will you tell me which policy is best for my situation?",
+    "answer": "This chatbot provides general information about banking and insurance products; for personalized advice, please consult a bank representative or licensed financial/insurance advisor.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "98",
+    "category": "General - AI Chatbot",
+    "question": "Can this bot give me investment advice?",
+    "answer": "This chatbot provides general information about banking and insurance products; for personalized advice, please consult a bank representative or licensed financial/insurance advisor.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "98",
+    "category": "General - AI Chatbot",
+    "question": "Should I trust this chatbot for financial decisions?",
+    "answer": "This chatbot provides general information about banking and insurance products; for personalized advice, please consult a bank representative or licensed financial/insurance advisor.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "99",
+    "category": "General - AI Chatbot",
+    "question": "Is my data safe when I chat with this bot?",
+    "answer": "Yes, conversations are handled per the bank/insurer's privacy and data protection policies; avoid sharing sensitive details like full card numbers, PINs, or passwords in chat.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "99",
+    "category": "General - AI Chatbot",
+    "question": "Is it safe to share information with this chatbot?",
+    "answer": "Yes, conversations are handled per the bank/insurer's privacy and data protection policies; avoid sharing sensitive details like full card numbers, PINs, or passwords in chat.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "99",
+    "category": "General - AI Chatbot",
+    "question": "Will my chat data be kept private?",
+    "answer": "Yes, conversations are handled per the bank/insurer's privacy and data protection policies; avoid sharing sensitive details like full card numbers, PINs, or passwords in chat.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "99",
+    "category": "General - AI Chatbot",
+    "question": "Should I be worried about privacy while chatting here?",
+    "answer": "Yes, conversations are handled per the bank/insurer's privacy and data protection policies; avoid sharing sensitive details like full card numbers, PINs, or passwords in chat.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "100",
+    "category": "General - AI Chatbot",
+    "question": "How do I talk to a human agent instead of the chatbot?",
+    "answer": "You can request to speak with a human agent at any point in the chat, or use the customer care helpline, email, or branch visit for direct assistance.",
+    "is_original": "1"
+  },
+  {
+    "intent_id": "100",
+    "category": "General - AI Chatbot",
+    "question": "Can I speak to a real person instead of the bot?",
+    "answer": "You can request to speak with a human agent at any point in the chat, or use the customer care helpline, email, or branch visit for direct assistance.",
+    "is_original": "0"
+  },
+  {
+    "intent_id": "100",
+    "category": "General - AI Chatbot",
+    "question": "I want a human agent",
+    "answer": " not the chatbot",
+    "is_original": "You can request to speak with a human agent at any point in the chat, or use the customer care helpline, email, or branch visit for direct assistance.",
+    "extra_1": "0"
+  },
+  {
+    "intent_id": "100",
+    "category": "General - AI Chatbot",
+    "question": "How do I escalate this chat to a live representative?",
+    "answer": "You can request to speak with a human agent at any point in the chat, or use the customer care helpline, email, or branch visit for direct assistance.",
+    "is_original": "0"
+  }
+]

@@ -53,8 +53,6 @@ def build_prompt(question: str, context: Optional[str] = None) -> str:
     return question
 
 def generate_ai_response(prompt_text: str, context: Optional[str] = None, model_name: Optional[str] = None) -> str:
-    #api_key = os.environ.get("GEMINI_API_KEY")
-    #api_key = os.environ.get("GEMINI_API_KEY")
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return "Gemini chat is unavailable because GEMINI_API_KEY is not set."
